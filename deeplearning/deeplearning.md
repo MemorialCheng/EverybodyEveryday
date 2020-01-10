@@ -12,9 +12,18 @@
 ## 条件概率
 
 ## 期望、方差和协方差
-__期望（expectation）__ 、 __期望值（expected value）__ ; <br>
-__方差（variance）__ 衡量的是当我们对x 依据它的概率分布进行采样时，随机变量x 的函数值会呈现多大的差异：<br>
+1. __期望（expectation）__ 、 __期望值（expected value）__ ; <br>
+
+2. __方差（variance）__ 衡量的是当我们对x 依据它的概率分布进行采样时，随机变量x 的函数值会呈现多大的差异：<br>
 Var(f(x)) = E[(f(x) - E[f(x)])^2] <br>
 当方差很小时，f(x) 的值形成的簇比较接近它们的期望值。方差的平方根被称为 __标准差（standard deviation）__
+
+3. __正态分布（normal distribution），也称为高斯分布（Gaussian distribution）__
+
+4. 结构化概率模型
+
+# 第四章 数值计算
+
+
 
 
