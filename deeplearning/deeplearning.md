@@ -15,6 +15,6 @@
 期望（expectation）、期望值（expected value）;
 方差（variance）衡量的是当我们对x 依据它的概率分布进行采样时，随机变量x 的函数值会呈现多大的差异：<br>
 Var(f(x)) = E[(f(x) - E[f(x)])^2] <br>
-当方差很小时，f(x) 的值形成的簇比较接近它们的期望值。方差的平方根被称为__标准差（standard deviation）__
+当方差很小时，f(x) 的值形成的簇比较接近它们的期望值。方差的平方根被称为 __标准差（standard deviation）__
 
 
