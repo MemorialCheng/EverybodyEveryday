@@ -6,3 +6,11 @@
 3. ☆ 不要将Python关键字和函数名作为变量名。如，print,详见下图。
 4. 变量名应既简短又具有描述性。如，student_name.
 5. 慎用小写字母l和大写字母O，因为他们很容易被人错看成数字1和0.
+
+### 动手试一试
+No.1 将一条消息存储再变量中，将其打印出来；再将变量的值修改为一条新消息，并打印出来。
+```python
+example_message = "Hello, world! "
+print(example_message)
+example_message = "I like python, I'll study it well.And I will be devoted to AI,ML,DL."
+```
