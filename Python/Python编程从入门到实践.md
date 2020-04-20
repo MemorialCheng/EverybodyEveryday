@@ -6,6 +6,9 @@
 3. ☆ 不要将Python关键字和函数名作为变量名。如，print,详见下图。
 4. 变量名应既简短又具有描述性。如，student_name.
 5. 慎用小写字母l和大写字母O，因为他们很容易被人错看成数字1和0.
+<img src="https://github.com/MemorialCheng/EverybodyEveryday/blob/master/deeplearning/images/cnn%E6%9E%B6%E6%9E%84.png" width = "500">
+
+
 
 ### 动手试一试
 No.1 将一条消息存储再变量中，将其打印出来；再将变量的值修改为一条新消息，并打印出来。
@@ -15,3 +18,5 @@ print(example_message)
 example_message = "I like python, I'll study it well.And I will be devoted to AI,ML,DL."
 print(example_message)
 ```
+## 字符串
+字符串就是一系列字符。在Python中，用引号括起来的都是字符串，其中引号可以是单引号，也可以是双引号。
