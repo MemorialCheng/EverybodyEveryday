@@ -13,4 +13,5 @@ No.1 将一条消息存储再变量中，将其打印出来；再将变量的值
 example_message = "Hello, world! "
 print(example_message)
 example_message = "I like python, I'll study it well.And I will be devoted to AI,ML,DL."
+print(example_message)
 ```
