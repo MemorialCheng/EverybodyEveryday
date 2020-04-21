@@ -19,12 +19,29 @@ print(example_message)
 ## 字符串
 字符串就是一系列字符。在Python中，用引号括起来的都是字符串，其中引号可以是单引号，也可以是双引号。
 ### 常见字符串操作方法
-1. string.title()    将每个单词的首字母改为大写
-2. string.upper()    将字符串改为全部大写
-3. string.lower()    将字符串改为全部小写
-4. string.isalpha()  判断字符串是否全部由字母组成，是返回True，否返回False
-5. string.isalnum()  判断是否全部由数字或者字母组成,是返回True，否返回False
-6. string.isdigit()  判断是否是整数,是返回True，否返回False
+1. string.title()    将每个单词的首字母改为大写;
+2. string.upper()    将字符串改为全部大写;
+3. string.lower()    将字符串改为全部小写;
+4. string.isalpha()  判断字符串是否全部由字母组成，是返回True，否返回False;
+5. string.isdigit()  判断字符串是否全部由数字组成,是返回True，否返回False;
+6. string.isalnum()  判断字符串是否全部由数字或者字母组成,是返回True，否返回False;
+
 **注意：上面存在空格也会False**
+7. string.find('str')  从左往右找第一个对应'str'的值，显示的是正向索引，如果没找到匹配的值返回-1
+如，
+```python
+例1
+string = 'babc abd abcb'
+res = string.find('bc')
+print(res)
+结果输出：2
+
+例2
+res = string.find('bc',8,13)
+print(res)
+结果输出：10
+```
+8. string.rfind('str')  从右往左找第一个对应的值，显示的是正向索引,如果没找到匹配的值返回-1
+
 
 
