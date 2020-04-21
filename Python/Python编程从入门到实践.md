@@ -22,4 +22,6 @@ print(example_message)
 1. string.title()  *将每个单词的首字母改为大写*
 2. string.upper()  *将字符串改为全部大写*
 3. string.lower()  *将字符串改为全部小写*
-4. find()
+4. string.isalpha()  判断字符串是否全部由字母组成，是返回True，否返回False
+5. string.isalnum()  判断是否是数字或者字符组成,是返回True，否返回False
+
