@@ -19,9 +19,12 @@ print(example_message)
 ## 字符串
 字符串就是一系列字符。在Python中，用引号括起来的都是字符串，其中引号可以是单引号，也可以是双引号。
 ### 常见字符串操作方法
-1. string.title()  *将每个单词的首字母改为大写*
-2. string.upper()  *将字符串改为全部大写*
-3. string.lower()  *将字符串改为全部小写*
+1. string.title()    将每个单词的首字母改为大写
+2. string.upper()    将字符串改为全部大写
+3. string.lower()    将字符串改为全部小写
 4. string.isalpha()  判断字符串是否全部由字母组成，是返回True，否返回False
-5. string.isalnum()  判断是否是数字或者字符组成,是返回True，否返回False
+5. string.isalnum()  判断是否全部由数字或者字母组成,是返回True，否返回False
+6. string.isdigit()  判断是否是整数,是返回True，否返回False
+**注意：上面存在空格也会False**
+
 
