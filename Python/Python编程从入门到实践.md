@@ -44,7 +44,11 @@ print(res)
 8. string.rfind('str')        从右往左找第一个对应的值，显示的是正向索引,如果没找到匹配的值返回-1;
 9. string.index('str')        从左往右找第一个对应的值，显示的是正向索引，如果没找到匹配的值报错;
 10. string.count('str')       显示字符个数，如果没有显示0;
-11. string.startswith('str')  判断字符串当中开头字符是否为所选的字符;
+11. string.startswith('str')  判断字符串是否以所选字符开头，是返回True，否返回False;
+12. string.endswith('str')    判断字符串是否以所选字段结尾，是返回True，否返回False;
+13. string.isspace('str')     判断是否是由空格组成，是返回True，否返回False;
 
+
+*** pycharm快捷键：ctrl + d:复制一行；ctrl + ?:快速注释一行|撤销 ***
 
 
