@@ -47,7 +47,21 @@ print(res)
 12. string.startswith('str')  判断字符串是否以所选字符开头，是返回True，否返回False;
 13. string.endswith('str')    判断字符串是否以所选字段结尾，是返回True，否返回False;
 14. string.isspace('str')     判断是否是由空格组成，是返回True，否返回False;
-15. string.strip()   删除两边空格；
+15. string.strip()   删除两边空格;
+16. string.lstrip()  删除左边空格;
+17. string.rstrip()  删除右边空格;
+18. string.center(width, 'str')  居中，width字符串长度，str填充字符，默认空格填充；
+19. string.ljust(width, 'str')   左对齐;
+20. string.rjust(width, 'str')   右对齐;
+```python
+>>>str = 'runoob'
+>>> str.center(20, '*')
+'*******runoob*******'
+>>> str.center(20)
+'       runoob       '
+```
+
+
 
 *** pycharm快捷键：ctrl + d:复制一行；ctrl + ?:快速注释一行|撤销 ***
 
