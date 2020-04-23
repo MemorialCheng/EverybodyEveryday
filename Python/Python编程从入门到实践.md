@@ -25,6 +25,7 @@ print(example_message)
 4. string.isalpha()  判断字符串是否全部由字母组成，是返回True，否返回False;
 5. string.isdigit()  判断字符串是否全部由数字组成,是返回True，否返回False;
 6. string.isalnum()  判断字符串是否全部由数字或者字母组成,是返回True，否返回False;
+7. string.isspace()  
 
 **注意：上面存在空格也会False**
 7. string.find('str')  从左往右找第一个对应'str'的值，显示的是正向索引，如果没找到匹配的值返回-1;
@@ -47,7 +48,7 @@ print(res)
 11. string.startswith('str')  判断字符串是否以所选字符开头，是返回True，否返回False;
 12. string.endswith('str')    判断字符串是否以所选字段结尾，是返回True，否返回False;
 13. string.isspace('str')     判断是否是由空格组成，是返回True，否返回False;
-
+14. 
 
 *** pycharm快捷键：ctrl + d:复制一行；ctrl + ?:快速注释一行|撤销 ***
 
