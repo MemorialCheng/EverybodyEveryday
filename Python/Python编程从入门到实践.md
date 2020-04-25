@@ -60,10 +60,11 @@ print(res)
 >>> str.center(20)
 '       runoob       '
 ```
-21. string.capitalize()  将字符串首个字符变为大写;
-22. string.count('str')  统计字符出现的次数;
-23. string.isidentifier() 判断是否是一个合法的变标识符，即是否符合变量命名规则;
-
+21. string.capitalize()    将字符串首个字符变为大写;
+22. string.count('str')    统计字符出现的次数;
+23. string.isidentifier()  判断是否是一个合法的变标识符，即是否符合变量命名规则;
+24. string.islower()       判断字符串是否全部是小写,是返回True，否返回False;
+25. string.isupper()       判断字符串是否全部为大写,是返回True，否返回False;
 
 *** pycharm快捷键：ctrl + d:复制一行；ctrl + ?:快速注释一行|撤销 ***
 
