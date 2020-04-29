@@ -74,8 +74,8 @@ print(res)
 # 第3章 列表
 列表是由一系列按特定顺序排列的元素组成。用方括号[]表示列表，用逗号分隔元素。
 print列表，输出结果是带中括号的。
-## 3.1 问列表
-### 根据索引访问
+## 3.1 访问列表
+### 3.1.1 根据索引访问
 ```
 bicycles = ['trek', 'cannondale', 'redline', 'specialized']
 print(bicycles[1])
@@ -101,7 +101,7 @@ print(bicycles[-1])
 specialized
 ```
 
-### 根据元祖访问
+### 3.1.2 根据元祖访问
 此时返回的仍然是列表。左闭右开区间
 ```
 bicycles = ['trek', 'cannondale', 'redline', 'specialized']
@@ -112,7 +112,7 @@ print(bicycles[0:2])
 ```
 
 ## 3.2 增、删、改列表
-### 修改列表
+### 3.2.1 修改列表
 用索引指定要修改的元素，然后直接赋值。
 ```
 bicycles = ['trek', 'cannondale', 'redline', 'specialized']
@@ -132,7 +132,7 @@ print(bicycles)
 ['tr', 'ca', 'redline', 'specialized']
 ```
 
-### 添加列表元素
+### 3.2.2 添加列表元素
 （一）在列表末尾添加元素——append()方法
 append()方法只能在列表末尾添加单个元素。
 ```
