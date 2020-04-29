@@ -80,17 +80,57 @@ print列表，输出结果是带中括号的。
 bicycles = ['trek', 'cannondale', 'redline', 'specialized']
 print(bicycles[1])
 
-输出结果
+输出结果(没有方括号和引号)
 cannondale
 ```
 此时输出了字符串cannondale，可以利用前面对字符串的操作：
 ```
 bicycles = ['trek', 'cannondale', 'redline', 'specialized']
 print(bicycles[1].title())  # 每个单词首字母大写
-输出结果
+
+输出结果(没有方括号和引号)
 Cannondale
 ```
 
+### 支持负数索引，-1最后一位，-2倒数第二位...
+```
+bicycles = ['trek', 'cannondale', 'redline', 'specialized']
+print(bicycles[-1])
+
+输出结果(没有方括号和引号)
+specialized
+```
+
+### 根据元祖访问
+此时返回的仍然是列表。左闭右开区间
+```
+bicycles = ['trek', 'cannondale', 'redline', 'specialized']
+print(bicycles[0:2])
+
+输出结果
+['trek', 'cannondale']
+```
+
+## 增、删、改列表
+### 修改列表
+用索引指定要修改的元素，然后直接赋值。
+```
+bicycles = ['trek', 'cannondale', 'redline', 'specialized']
+bicycles[2] = 'red'
+print(bicycles)
+
+输出结果
+['trek', 'cannondale', 'red', 'specialized']
+```
+__也可多个元素一起修改
+```
+bicycles = ['trek', 'cannondale', 'redline', 'specialized']
+bicycles[0:2] = ['tr','ca']
+print(bicycles)
+
+输出结果
+['tr', 'ca', 'redline', 'specialized']
+```
 
 
 
