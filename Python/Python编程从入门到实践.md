@@ -1,5 +1,5 @@
 《Python编程从入门到实践》学习笔记，每天坚持python编程学习ing...
-本文记录的是自己的学习笔记，以及一些小结，不代表python知识体系。
+本文记录的是自己的学习笔记，以及一些小结，不代表python完整知识体系。
 # 第2章 变量和简单数据类型
 ## 变量的命名规则
 1. ☆ 变量名只能包含字母、数字和下划线。变量名可以字母或下划线开头，但不能数字开头。
@@ -73,5 +73,24 @@ print(res)
 
 # 第3章 列表
 列表是由一系列按特定顺序排列的元素组成。用方括号[]表示列表，用逗号分隔元素。
+print列表，输出结果是带中括号的。
+## 访问列表
+### 根据索引访问
+```
+bicycles = ['trek', 'cannondale', 'redline', 'specialized']
+print(bicycles[1])
+
+输出结果
+cannondale
+```
+此时输出了字符串cannondale，可以利用前面对字符串的操作：
+```
+bicycles = ['trek', 'cannondale', 'redline', 'specialized']
+print(bicycles[1].title())  # 每个单词首字母大写
+输出结果
+Cannondale
+```
+
+
 
 
