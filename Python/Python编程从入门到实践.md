@@ -1,7 +1,7 @@
 《Python编程从入门到实践》学习笔记，每天坚持python编程学习ing...
 本文记录的是自己的学习笔记，以及一些小结，不代表python完整知识体系。
 # 第2章 变量和简单数据类型
-## 变量的命名规则
+## 2.1 变量的命名规则
 1. ☆ 变量名只能包含字母、数字和下划线。变量名可以字母或下划线开头，但不能数字开头。
 2. ☆ 变量名不能包含空格，可使用下划线来分隔其中的单词。如，greeting_message.
 3. ☆ 不要将Python关键字和函数名作为变量名。如，print,详见下图。
@@ -17,7 +17,7 @@ print(example_message)
 example_message = "I like python, I'll study it well.And I will be devoted to AI,ML,DL."
 print(example_message)
 ```
-## 字符串
+## 2.2 字符串
 字符串就是一系列字符。在Python中，用引号括起来的都是字符串，其中引号可以是单引号，也可以是双引号。
 ### 常见字符串操作方法
 1. string.title()    将每个单词的首字母改为大写，有数字不会报错;
@@ -74,7 +74,7 @@ print(res)
 # 第3章 列表
 列表是由一系列按特定顺序排列的元素组成。用方括号[]表示列表，用逗号分隔元素。
 print列表，输出结果是带中括号的。
-## 访问列表
+## 3.1 问列表
 ### 根据索引访问
 ```
 bicycles = ['trek', 'cannondale', 'redline', 'specialized']
@@ -111,7 +111,7 @@ print(bicycles[0:2])
 ['trek', 'cannondale']
 ```
 
-## 增、删、改列表
+## 3.2 增、删、改列表
 ### 修改列表
 用索引指定要修改的元素，然后直接赋值。
 ```
