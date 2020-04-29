@@ -122,7 +122,7 @@ print(bicycles)
 输出结果
 ['trek', 'cannondale', 'red', 'specialized']
 ```
-__也可多个元素一起修改
+__也可多个元素一起修改__
 ```
 bicycles = ['trek', 'cannondale', 'redline', 'specialized']
 bicycles[0:2] = ['tr','ca']
@@ -130,6 +130,30 @@ print(bicycles)
 
 输出结果
 ['tr', 'ca', 'redline', 'specialized']
+```
+
+### 添加列表元素
+（一）在列表末尾添加元素——append()方法
+append()方法只能在列表末尾添加单个元素。
+```
+bicycles = ['trek', 'cannondale', 'redline', 'specialized']
+addbicy = 'haluo'
+bicycles.append(addbicy)
+print(bicycles)
+
+输出结果
+['trek', 'cannondale', 'redline', 'specialized', 'haluo']
+```
+（二）在列表末尾添加元素——extend()方法
+extend()方法可以在列表末尾添加多个元素，可以理解为两个列表合并。
+```
+bicycles = ['trek', 'cannondale', 'redline', 'specialized']
+addbicy = ['haluo','mobai']
+bicycles.extend(['haluo','mobai'])
+print(bicycles)
+
+输出结果
+['trek', 'cannondale', 'redline', 'specialized', 'haluo', 'mobai']
 ```
 
 
