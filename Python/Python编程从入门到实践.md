@@ -157,6 +157,15 @@ print(bicycles)
 输出结果
 ['trek', 'cannondale', 'redline', 'specialized', 'haluo', 'mobai']
 ```
+__特别解析:__
+extend()方法通过在列表末尾追加可迭代对象中的元素来扩展列表。可迭代对象包括字符串、列表、元祖、字典。
+```
+bicycles = ['trek', 'cannondale', 'redline', 'specialized']
+bicycles.extend('haluo')
+print(bicycles)
 
+输出结果
+['trek', 'cannondale', 'redline', 'specialized', 'h', 'a', 'l', 'u', 'o']
 
-
+因为这里是将字符串'haluo'视为一个可迭代对象进行处理的。
+``
