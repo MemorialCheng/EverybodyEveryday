@@ -180,5 +180,13 @@ print(bicycles)
 ```
 ### 3.2.3 删除列表元素
 （一）使用del语句删除列表元素
+del语句结合索引可以删除指定位置的元素； 如果不指定索引，将删除整个列表。
+```
+bicycles = ['trek', 'haluo', 'cannondale', 'redline', 'specialized']
+del bicycles[1]
+print(bicycles)
 
+输出结果
+['trek', 'cannondale', 'redline', 'specialized']
+```
 
