@@ -178,5 +178,7 @@ print(bicycles)
 输出结果
 ['trek', 'haluo', 'cannondale', 'redline', 'specialized']
 ```
+### 3.2.3 删除列表元素
+（一）使用del语句删除列表元素
 
 
