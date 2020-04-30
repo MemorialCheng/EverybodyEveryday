@@ -169,3 +169,14 @@ print(bicycles)
 
 因为这里是将字符串'haluo'视为一个可迭代对象进行处理的。
 ``
+（三）在列表中插入元素——insert()方法
+```
+bicycles = ['trek', 'cannondale', 'redline', 'specialized']
+bicycles.insert(1,'haluo')
+print(bicycles)
+
+输出结果
+['trek', 'haluo', 'cannondale', 'redline', 'specialized']
+```
+
+
