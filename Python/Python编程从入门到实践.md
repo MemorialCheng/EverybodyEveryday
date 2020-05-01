@@ -188,6 +188,23 @@ __特别解析:__
 答：如果你要从列表中删除一个元素，且不再以任何方式使用这个元素时，使用del语句；
 如果你要在删除元素后继续使用这个元素，就使用pop()方法。
 
+（三）根据元素值删除列表元素——remove()方法
+remove()方法如果成功删除值则返回None;如果列表没有该值则报错list.remove(x): x not in list
+
+```
+bicycles = ['trek', 'haluo', 'cannondale', 'redline', 'specialized']
+bic = bicycles.remove('haluo')
+print(bicycles)
+print(bic)
+
+输出结果
+['trek', 'cannondale', 'redline', 'specialized']
+None
+```
+__特别解析:__
+remove()方法只删除第一个指定的值，如果要删除的值在列表中多次出现，需要使用循环来判断是否删除了所有这样的值。
+
+
 ### 3.2.3 修改列表
 用索引指定要修改的元素，然后直接赋值。
 ```
