@@ -230,13 +230,26 @@ Python提供了很多组织（排序）列表的方法
 默认正序，如果需要按相反顺序排列，需向sort()方法传递参数 reverse=True.
 sort()排序后原来的排列顺序无法恢复。
 ```
-cars = ['bmw', 'audi', 'toyota', 'subaru','abdi']
-cars.sort()
+正序
+cars = ['bmw', 'audi', 'toyota', 'subaru','abdi','12345','ABDI','AB!#','!#']
+cars.sort(reverse=True)
 print(cars)
 
-输出结果:__(先第一个字母排序，第一个字母相同则再按第二个字母排序,以此类推....)__
-['abdi', 'audi', 'bmw', 'subaru', 'toyota']
+输出结果:
+['!#', '12345', 'AB!#', 'ABDI', 'abdi', 'audi', 'bmw', 'subaru', 'toyota']
 ```
+```
+倒序
+cars = ['bmw', 'audi', 'toyota', 'subaru','abdi','12345','ABDI','AB!#','!#']
+cars.sort(reverse=True)
+print(cars)
+
+输出结果:
+['toyota', 'subaru', 'bmw', 'audi', 'abdi', 'ABDI', 'AB!#', '12345', '!#']
+```
+
+__特别解析__
+排序优先级：特殊字符 > 数字 > 大写字母 > 小写字母
 
 
 
