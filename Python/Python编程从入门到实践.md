@@ -181,6 +181,7 @@ print(bicycles)
 ### 3.2.3 删除列表元素
 （一）使用del语句删除列表元素
 del语句结合索引可以删除指定位置的元素； 如果不指定索引，将删除整个列表。
+del语句删除元素，没有返回值，但会删除原列表的元素。
 ```
 bicycles = ['trek', 'haluo', 'cannondale', 'redline', 'specialized']
 del bicycles[1]
@@ -188,5 +189,17 @@ print(bicycles)
 
 输出结果
 ['trek', 'cannondale', 'redline', 'specialized']
+```
+（二）使用pop()方法删除列表元素
+pop()方法删除列表元素返回值为被删除的元素。括号中不输入索引值，则默认删除最后一个，也可指定索引删除。
+```
+bicycles = ['trek', 'haluo', 'cannondale', 'redline', 'specialized']
+bic = bicycles.pop()
+print(bicycles)
+print(bic)
+
+输出结果
+['trek', 'haluo', 'cannondale', 'redline']
+specialized
 ```
 
