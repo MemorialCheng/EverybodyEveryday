@@ -224,6 +224,21 @@ print(bicycles)
 输出结果
 ['tr', 'ca', 'redline', 'specialized']
 ```
+## 3.3 组织列表
+Python提供了很多组织（排序）列表的方法
+### 3.3.1 使用方法sort()对列表进行___永久性___排序
+默认正序，如果需要按相反顺序排列，需向sort()方法传递参数 reverse=True.
+sort()排序后原来的排列顺序无法恢复。
+```
+cars = ['bmw', 'audi', 'toyota', 'subaru','abdi']
+cars.sort()
+print(cars)
+
+输出结果:__(先第一个字母排序，第一个字母相同则再按第二个字母排序,以此类推....)__
+['abdi', 'audi', 'bmw', 'subaru', 'toyota']
+```
+
+
 
 
 
