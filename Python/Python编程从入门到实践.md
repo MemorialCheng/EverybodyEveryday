@@ -10,7 +10,7 @@
 <img src="https://github.com/MemorialCheng/EverybodyEveryday/blob/master/Python/python_images/python关键字.png" width = "500">
 
 ### 动手试一试
-No.1 将一条消息存储再变量中，将其打印出来；再将变量的值修改为一条新消息，并打印出来。
+No.1 将一条消息存储在变量中，将其打印出来；再将变量的值修改为一条新消息，并打印出来。
 ```python
 example_message = "Hello, world! "
 print(example_message)
