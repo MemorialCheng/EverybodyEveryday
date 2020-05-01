@@ -168,7 +168,7 @@ print(bicycles)
 ['trek', 'cannondale', 'redline', 'specialized', 'h', 'a', 'l', 'u', 'o']
 
 因为这里是将字符串'haluo'视为一个可迭代对象进行处理的。
-``
+```
 （三）在列表中插入元素——insert()方法
 ```
 bicycles = ['trek', 'cannondale', 'redline', 'specialized']
@@ -190,6 +190,7 @@ print(bicycles)
 输出结果
 ['trek', 'cannondale', 'redline', 'specialized']
 ```
+
 （二）使用pop()方法删除列表元素
 pop()方法删除列表元素返回值为被删除的元素。括号中不输入索引值，则默认删除最后一个，也可指定索引删除。
 ```
@@ -202,4 +203,5 @@ print(bic)
 ['trek', 'haluo', 'cannondale', 'redline']
 specialized
 ```
+
 
