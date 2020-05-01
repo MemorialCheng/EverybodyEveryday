@@ -112,27 +112,7 @@ print(bicycles[0:2])
 ```
 
 ## 3.2 增、删、改列表
-### 3.2.1 修改列表
-用索引指定要修改的元素，然后直接赋值。
-```
-bicycles = ['trek', 'cannondale', 'redline', 'specialized']
-bicycles[2] = 'red'
-print(bicycles)
-
-输出结果
-['trek', 'cannondale', 'red', 'specialized']
-```
-__也可多个元素一起修改__
-```
-bicycles = ['trek', 'cannondale', 'redline', 'specialized']
-bicycles[0:2] = ['tr','ca']
-print(bicycles)
-
-输出结果
-['tr', 'ca', 'redline', 'specialized']
-```
-
-### 3.2.2 添加列表元素
+### 3.2.1 添加列表元素
 （一）在列表末尾添加元素——append()方法
 
 append()方法只能在列表末尾添加单个元素。
@@ -178,7 +158,7 @@ print(bicycles)
 输出结果
 ['trek', 'haluo', 'cannondale', 'redline', 'specialized']
 ```
-### 3.2.3 删除列表元素
+### 3.2.2 删除列表元素
 （一）使用del语句删除列表元素
 del语句结合索引可以删除指定位置的元素； 如果不指定索引，将删除整个列表。
 del语句删除元素，没有返回值，但会删除原列表的元素。
@@ -203,5 +183,32 @@ print(bic)
 ['trek', 'haluo', 'cannondale', 'redline']
 specialized
 ```
+__特别解析:__
+删除列表元素如何选择使用del语句还是pop()方法？
+答：如果你要从列表中删除一个元素，且不再以任何方式使用这个元素时，使用del语句；
+如果你要在删除元素后继续使用这个元素，就使用pop()方法。
+
+### 3.2.3 修改列表
+用索引指定要修改的元素，然后直接赋值。
+```
+bicycles = ['trek', 'cannondale', 'redline', 'specialized']
+bicycles[2] = 'red'
+print(bicycles)
+
+输出结果
+['trek', 'cannondale', 'red', 'specialized']
+```
+__也可多个元素一起修改__
+```
+bicycles = ['trek', 'cannondale', 'redline', 'specialized']
+bicycles[0:2] = ['tr','ca']
+print(bicycles)
+
+输出结果
+['tr', 'ca', 'redline', 'specialized']
+```
+
+
+
 
 
