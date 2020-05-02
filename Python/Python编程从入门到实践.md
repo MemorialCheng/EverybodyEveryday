@@ -73,41 +73,42 @@ print(res)
 
 # 第3章 列表
 列表是由一系列按特定顺序排列的元素组成。用方括号[]表示列表，用逗号分隔元素。
-print列表，输出结果是带中括号的。
+print(列表)，输出结果是带中括号的。
 ## 3.1 访问列表
-### 3.1.1 根据索引访问
-```
+### 3.1.1 根据索引访问单个元素
+```python
 bicycles = ['trek', 'cannondale', 'redline', 'specialized']
 print(bicycles[1])
 
-输出结果(没有方括号和引号)
+# 输出结果(没有方括号和引号):
 cannondale
 ```
-此时输出了字符串cannondale，可以利用前面对字符串的操作：
-```
+此时输出了字符串cannondale，还可以利用第二章学到的对字符串操作：
+```python
 bicycles = ['trek', 'cannondale', 'redline', 'specialized']
 print(bicycles[1].title())  # 每个单词首字母大写
 
-输出结果(没有方括号和引号)
+# 输出结果(没有方括号和引号)
 Cannondale
 ```
 
-### 支持负数索引，-1最后一位，-2倒数第二位...
-```
+__特别解析__
+支持负数索引，-1最后一位，-2倒数第二位......
+```python
 bicycles = ['trek', 'cannondale', 'redline', 'specialized']
 print(bicycles[-1])
 
-输出结果(没有方括号和引号)
+# 输出结果(没有方括号和引号)
 specialized
 ```
 
-### 3.1.2 根据元祖访问
-此时返回的仍然是列表。左闭右开区间
-```
+### 3.1.2 根据切片访问多个元素
+此时返回值仍然是列表。左闭右开区间
+```python
 bicycles = ['trek', 'cannondale', 'redline', 'specialized']
 print(bicycles[0:2])
 
-输出结果
+# 输出结果
 ['trek', 'cannondale']
 ```
 
@@ -116,70 +117,70 @@ print(bicycles[0:2])
 （一）在列表末尾添加元素——append()方法
 
 append()方法只能在列表末尾添加单个元素。
-```
+```python
 bicycles = ['trek', 'cannondale', 'redline', 'specialized']
 addbicy = 'haluo'
 bicycles.append(addbicy)
 print(bicycles)
 
-输出结果
+# 输出结果
 ['trek', 'cannondale', 'redline', 'specialized', 'haluo']
 ```
 （二）在列表末尾添加元素——extend()方法
 
 extend()方法可以在列表末尾添加多个元素，可以理解为两个列表合并。
-```
+```python
 bicycles = ['trek', 'cannondale', 'redline', 'specialized']
 addbicy = ['haluo','mobai']
 bicycles.extend(['haluo','mobai'])
 print(bicycles)
 
-输出结果
+# 输出结果
 ['trek', 'cannondale', 'redline', 'specialized', 'haluo', 'mobai']
 ```
 __特别解析:__
 extend()方法通过在列表末尾追加可迭代对象中的元素来扩展列表。可迭代对象包括字符串、列表、元祖、字典。
-```
+```python
 bicycles = ['trek', 'cannondale', 'redline', 'specialized']
 bicycles.extend('haluo')
 print(bicycles)
 
-输出结果
+# 输出结果
 ['trek', 'cannondale', 'redline', 'specialized', 'h', 'a', 'l', 'u', 'o']
 
-因为这里是将字符串'haluo'视为一个可迭代对象进行处理的。
+# 因为这里是将字符串'haluo'视为一个可迭代对象进行处理的。
 ```
 （三）在列表中插入元素——insert()方法
-```
+```python
 bicycles = ['trek', 'cannondale', 'redline', 'specialized']
 bicycles.insert(1,'haluo')
 print(bicycles)
 
-输出结果
+# 输出结果
 ['trek', 'haluo', 'cannondale', 'redline', 'specialized']
 ```
 ### 3.2.2 删除列表元素
 （一）使用del语句删除列表元素
 del语句结合索引可以删除指定位置的元素； 如果不指定索引，将删除整个列表。
 del语句删除元素，没有返回值，但会删除原列表的元素。
-```
+```python
 bicycles = ['trek', 'haluo', 'cannondale', 'redline', 'specialized']
 del bicycles[1]
 print(bicycles)
 
-输出结果
+# 输出结果
 ['trek', 'cannondale', 'redline', 'specialized']
 ```
 
 （二）使用pop()方法删除列表元素
 pop()方法删除列表元素返回值为被删除的元素。括号中不输入索引值，则默认删除最后一个，也可指定索引删除。
-```
+```py
 bicycles = ['trek', 'haluo', 'cannondale', 'redline', 'specialized']
 bic = bicycles.pop()
 print(bicycles)
 print(bic)
 
-输出结果
+# 输出结果
 ['trek', 'haluo', 'cannondale', 'redline']
 specialized
 ```
@@ -191,13 +192,13 @@ __特别解析:__
 （三）根据元素值删除列表元素——remove()方法
 remove()方法如果成功删除值则返回None;如果列表没有该值则报错list.remove(x): x not in list
 
-```
+```py
 bicycles = ['trek', 'haluo', 'cannondale', 'redline', 'specialized']
 bic = bicycles.remove('haluo')
 print(bicycles)
 print(bic)
 
-输出结果
+# 输出结果
 ['trek', 'cannondale', 'redline', 'specialized']
 None
 ```
@@ -207,86 +208,84 @@ remove()方法只删除第一个指定的值，如果要删除的值在列表中
 
 ### 3.2.3 修改列表
 用索引指定要修改的元素，然后直接赋值。
-```
+```py
 bicycles = ['trek', 'cannondale', 'redline', 'specialized']
 bicycles[2] = 'red'
 print(bicycles)
 
-输出结果
+# 输出结果
 ['trek', 'cannondale', 'red', 'specialized']
 ```
 __也可多个元素一起修改__
-```
+```py
 bicycles = ['trek', 'cannondale', 'redline', 'specialized']
 bicycles[0:2] = ['tr','ca']
 print(bicycles)
 
-输出结果
+# 输出结果
 ['tr', 'ca', 'redline', 'specialized']
 ```
 ## 3.3 组织列表
 Python提供了很多组织（排序）列表的方法
-### 3.3.1 对列表进行___永久性___排序——方法sort()
-默认正序，如果需要按相反顺序排列，需向sort()方法传递参数 reverse=True.
+### 3.3.1 对列表进行永久性排序——方法sort()
+默认正序，如果需要倒序，向sort()方法传递参数 reverse=True.
 sort()排序后原来的排列顺序无法恢复。
-<br>
-格式：
+__格式：__
 列表名称.sort()
 
-```
-正序
+```py
+# 正序
 cars = ['bmw', 'audi', 'toyota', 'subaru','abdi','12345','ABDI','AB!#','!#']
 cars.sort(reverse=True)
 print(cars)
 
-输出结果:
+# 输出结果:
 ['!#', '12345', 'AB!#', 'ABDI', 'abdi', 'audi', 'bmw', 'subaru', 'toyota']
 ```
-```
-倒序
+```py
+# 倒序
 cars = ['bmw', 'audi', 'toyota', 'subaru','abdi','12345','ABDI','AB!#','!#']
 cars.sort(reverse=True)
 print(cars)
 
-输出结果:
+# 输出结果:
 ['toyota', 'subaru', 'bmw', 'audi', 'abdi', 'ABDI', 'AB!#', '12345', '!#']
 ```
 
 __特别解析__
 排序优先级：特殊字符 > 数字 > 大写字母 > 小写字母
 
-### 3.3.2 对列表进行___临时性___排序——函数sorted()
+### 3.3.2 对列表进行临时性排序——函数sorted()
 默认正序，如果需要按相反顺序排列，需向sorted()函数传递参数 reverse=True.
-<br>
-格式：
+__格式：__
 sorted(列表名称)
 
 ```python
-正序
+# 正序
 oldcars = ['bmw', 'audi', 'toyota', 'subaru','abdi','12345','ABDI','AB!#','!#']
 newcars = sorted(cars)
 print(oldcars)
 print(newcars)
 
-输出结果
+# 输出结果
 ['bmw', 'audi', 'toyota', 'subaru', 'abdi', '12345', 'ABDI', 'AB!#', '!#']
 ['!#', '12345', 'AB!#', 'ABDI', 'abdi', 'audi', 'bmw', 'subaru', 'toyota']
 ```
 ```python
-倒序
+# 倒序
 oldcars = ['bmw', 'audi', 'toyota', 'subaru','abdi','12345','ABDI','AB!#','!#']
 newcars = sorted(cars,reverse=True)
 print(oldcars)
 print(newcars)
 
-输出结果
+# 输出结果
 ['bmw', 'audi', 'toyota', 'subaru', 'abdi', '12345', 'ABDI', 'AB!#', '!#']
 ['toyota', 'subaru', 'bmw', 'audi', 'abdi', 'ABDI', 'AB!#', '12345', '!#']
 ```
 
 ### 3.3.3 反转列表顺序——方法reverse()
 方法reverse()指的是反转列表元素的排列顺序，并且是永久性修改列表元素顺序。
-格式：
+__格式：__
 列表名称.reverse()
 
 ```python
@@ -294,9 +293,16 @@ cars = ['bmw', 'audi', 'toyota', 'subaru','abdi']
 cars.reverse()
 print(cars)
 
-输出结果
+# 输出结果
 ['abdi', 'subaru', 'toyota', 'audi', 'bmw']
 ```
+
+__特别解析__
+1. 方法的使用格式是：对象名称.方法();
+2. 函数的使用格式是：对象名称.函数();
+3. 函数len()可求列表的长度，返回元素个数。
+
+
 
 
 
