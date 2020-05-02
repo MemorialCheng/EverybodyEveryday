@@ -226,9 +226,13 @@ print(bicycles)
 ```
 ## 3.3 组织列表
 Python提供了很多组织（排序）列表的方法
-### 3.3.1 使用方法sort()对列表进行___永久性___排序
+### 3.3.1 对列表进行___永久性___排序——方法sort()
 默认正序，如果需要按相反顺序排列，需向sort()方法传递参数 reverse=True.
 sort()排序后原来的排列顺序无法恢复。
+<br>
+格式：
+列表名称.sort()
+
 ```
 正序
 cars = ['bmw', 'audi', 'toyota', 'subaru','abdi','12345','ABDI','AB!#','!#']
@@ -251,8 +255,48 @@ print(cars)
 __特别解析__
 排序优先级：特殊字符 > 数字 > 大写字母 > 小写字母
 
+### 3.3.2 对列表进行___临时性___排序——函数sorted()
+默认正序，如果需要按相反顺序排列，需向sorted()函数传递参数 reverse=True.
+<br>
+格式：
+sorted(列表名称)
 
+```python
+正序
+oldcars = ['bmw', 'audi', 'toyota', 'subaru','abdi','12345','ABDI','AB!#','!#']
+newcars = sorted(cars)
+print(oldcars)
+print(newcars)
 
+输出结果
+['bmw', 'audi', 'toyota', 'subaru', 'abdi', '12345', 'ABDI', 'AB!#', '!#']
+['!#', '12345', 'AB!#', 'ABDI', 'abdi', 'audi', 'bmw', 'subaru', 'toyota']
+```
+```python
+倒序
+oldcars = ['bmw', 'audi', 'toyota', 'subaru','abdi','12345','ABDI','AB!#','!#']
+newcars = sorted(cars,reverse=True)
+print(oldcars)
+print(newcars)
+
+输出结果
+['bmw', 'audi', 'toyota', 'subaru', 'abdi', '12345', 'ABDI', 'AB!#', '!#']
+['toyota', 'subaru', 'bmw', 'audi', 'abdi', 'ABDI', 'AB!#', '12345', '!#']
+```
+
+### 3.3.3 反转列表顺序——方法reverse()
+方法reverse()指的是反转列表元素的排列顺序，并且是永久性修改列表元素顺序。
+格式：
+列表名称.reverse()
+
+```python
+cars = ['bmw', 'audi', 'toyota', 'subaru','abdi']
+cars.reverse()
+print(cars)
+
+输出结果
+['abdi', 'subaru', 'toyota', 'audi', 'bmw']
+```
 
 
 
