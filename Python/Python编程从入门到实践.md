@@ -29,6 +29,7 @@ print(example_message)
 7. string.isspace()  判断字符串是否全部由空格组成，是返回True，否返回False;
 
 **注意：上面判断组成的方法，字符串存在空格也会False**
+
 8. string.find('str')  从左往右找第一个对应'str'的值，显示的是正向索引，如果没找到匹配的值返回-1;
 如，
 ```python
