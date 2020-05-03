@@ -21,24 +21,25 @@ print(example_message)
 字符串就是一系列字符。在Python中，用引号括起来的都是字符串，其中引号可以是单引号，也可以是双引号。
 ### 常见字符串操作方法（以下对字符串的更新操作都是临时性的，不会改变原来字符串）
 1. string.title()    将每个单词的首字母改为大写，有数字不会报错;
-2. string.upper()    将字符串改为全部大写;
-3. string.lower()    将字符串改为全部小写;
-4. string.isalpha()  判断字符串是否全部由字母组成，是返回True，否返回False;
-5. string.isdigit()  判断字符串是否全部由数字组成,是返回True，否返回False;
-6. string.isalnum()  判断字符串是否全部由数字或者字母组成,是返回True，否返回False;
-7. string.isspace()  判断字符串是否全部由空格组成，是返回True，否返回False;
+2. string.capitalize()  将字符串首个字符改为大写;
+3. string.upper()    将字符串改为全部大写;
+4. string.lower()    将字符串改为全部小写;
+5. string.isalpha()  判断字符串是否全部由字母组成，是返回True，否返回False;
+6. string.isdigit()  判断字符串是否全部由数字组成,是返回True，否返回False;
+7. string.isalnum()  判断字符串是否全部由数字或者字母组成,是返回True，否返回False;
+8. string.isspace()  判断字符串是否全部由空格组成，是返回True，否返回False;
 
 **注意：上面判断组成的方法，字符串存在空格也会返回False**
 
-8. string.islower()  判断字符串中字母是否全部是小写,是返回True，否返回False;
-9. string.isupper()  判断字符串中字母是否全部为大写,是返回True，否返回False;
+9. string.islower()  判断字符串中字母是否全部是小写,是返回True，否返回False;
+10. string.isupper()  判断字符串中字母是否全部为大写,是返回True，否返回False;
 
 **注意：islower()和isupper()，判断的仅仅是字符串中的字母，如果存在空格、特殊字符等不影响返回结果**
 
-10. string.isidentifier()     判断是否是一个合法的变标识符，即是否符合变量命名规则;
-11. string.startswith('str')  判断字符串是否以所选字符开头，是返回True，否返回False;
-12. string.endswith('str')    判断字符串是否以所选字段结尾，是返回True，否返回False;
-13. string.find('str')  从左往右找第一个对应'str'的值，显示的是正向索引，**如果没找到匹配的值返回-1**;
+11. string.isidentifier()     判断是否是一个合法的变标识符，即是否符合变量命名规则;
+12. string.startswith('str')  判断字符串是否以所选字符开头，是返回True，否返回False;
+13. string.endswith('str')    判断字符串是否以所选字段结尾，是返回True，否返回False;
+14. string.find('str')  从左往右找第一个对应'str'的值，显示的是正向索引，**如果没找到匹配的值返回-1**;
 如，
 ```python
 # 例1
@@ -54,16 +55,16 @@ print(res)
 # 结果输出：
 10
 ```
-14. string.rfind('str')       从右往左找第一个对应的值，显示的是正向索引,如果没找到匹配的值返回-1;
-15. string.index('str')       从左往右找第一个对应的值，显示的是正向索引，**如果没找到匹配的值报错**;
-16. string.count('str')       显示字符个数，如果没有显示0;
+15. string.rfind('str')       从右往左找第一个对应的值，显示的是正向索引,如果没找到匹配的值返回-1;
+16. string.index('str')       从左往右找第一个对应的值，显示的是正向索引，**如果没找到匹配的值报错**;
+17. string.count('str')       显示字符个数，如果没有显示0;
 
-17. string.strip()     删除两边空格;
-18. string.lstrip()    删除左边空格;
-19. string.rstrip()    删除右边空格;
-20. string.center(width, 'str')  居中，width字符串长度，str填充字符，默认空格填充；
-21. string.ljust(width, 'str')   左对齐;
-22. string.rjust(width, 'str')   右对齐;
+18. string.strip()     删除两边空格;
+19. string.lstrip()    删除左边空格;
+20. string.rstrip()    删除右边空格;
+21. string.center(width, 'str')  居中，width字符串长度，str填充字符，默认空格填充；
+22. string.ljust(width, 'str')   左对齐;
+23. string.rjust(width, 'str')   右对齐;
 ```python
 str = 'runoob'
 str.center(20, '*')
@@ -71,8 +72,8 @@ str.center(20, '*')
 str.center(20)
 '       runoob       '
 ```
-23. string.capitalize()    将字符串首个字符变为大写;
-24. string.count('str')    统计字符出现的次数;
+24. string.capitalize()    将字符串首个字符变为大写;
+25. string.count('str')    统计字符出现的次数;
 
 ***pycharm快捷键：ctrl + d:复制一行；ctrl + ?:快速注释一行|撤销 ***
 
