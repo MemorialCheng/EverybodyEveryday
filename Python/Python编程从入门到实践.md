@@ -332,5 +332,47 @@ for dog in dogs:
 ```
 ## 4.2 创建数值列表
 ### 4.2.1 使用range()函数创建数字列表
+range()函数可创建一个整数列表，一般用在 for 循环中。
+**语法**
+range(start, stop[, step])
+参数说明：
+start: 计数从 start 开始。默认是从 0 开始。例如range（5）等价于range（0， 5）;
+stop: 计数到 stop 结束，但不包括 stop。例如：range（0， 5） 是[0, 1, 2, 3, 4]没有5；
+step：步长，默认为1。例如：range（0， 5） 等价于 range(0, 5, 1)；
+左闭右开！！！
+<br>
+```py
+for value in range(5):
+    print(value)
+
+# 输出结果
+0
+1
+2
+3
+4
+```
+**使用函数list()将range()的结果直接转换成列表**
+```py
+numbers = list(range(1,6))
+print(numbers)
+
+# 输出结果
+[1, 2, 3, 4, 5]
+```
+### 4.2.2 对数字列表执行简单的统计计算
+min()最小值函数，max()最大值函数，sum()求和函数。
+```py
+numbers = list(0,10)
+minNum = min(numbers)
+maxNum = max(numbers)
+sumNum = sum(numbers)
+print(minNum,maxNum,sumNum)
+
+# 输出结果
+0 9 45
+```
+
+
 
 
