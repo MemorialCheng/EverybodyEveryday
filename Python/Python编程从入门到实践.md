@@ -30,44 +30,49 @@ print(example_message)
 
 **注意：上面判断组成的方法，字符串存在空格也会返回False**
 
-8. string.find('str')  从左往右找第一个对应'str'的值，显示的是正向索引，**如果没找到匹配的值返回-1**;
+8. string.islower()  判断字符串中字母是否全部是小写,是返回True，否返回False;
+9. string.isupper()  判断字符串中字母是否全部为大写,是返回True，否返回False;
+
+**注意：islower()和isupper()，判断的仅仅是字符串中的字母，如果存在空格、特殊字符等不影响返回结果**
+
+10. string.isidentifier()     判断是否是一个合法的变标识符，即是否符合变量命名规则;
+11. string.startswith('str')  判断字符串是否以所选字符开头，是返回True，否返回False;
+12. string.endswith('str')    判断字符串是否以所选字段结尾，是返回True，否返回False;
+13. string.find('str')  从左往右找第一个对应'str'的值，显示的是正向索引，**如果没找到匹配的值返回-1**;
 如，
 ```python
-例1
+# 例1
 string = 'babc abd abcb'
 res = string.find('bc')
 print(res)
-结果输出：2
+# 结果输出：
+2
 
-例2
+# 例2
 res = string.find('bc',8,13)
 print(res)
-结果输出：10
+# 结果输出：
+10
 ```
-9. string.rfind('str')        从右往左找第一个对应的值，显示的是正向索引,如果没找到匹配的值返回-1;
-10. string.index('str')        从左往右找第一个对应的值，显示的是正向索引，**如果没找到匹配的值报错**;
-11. string.count('str')       显示字符个数，如果没有显示0;
-12. string.startswith('str')  判断字符串是否以所选字符开头，是返回True，否返回False;
-13. string.endswith('str')    判断字符串是否以所选字段结尾，是返回True，否返回False;
-14. string.isspace('str')     判断是否是由空格组成，是返回True，否返回False;
-15. string.strip()   删除两边空格;
-16. string.lstrip()  删除左边空格;
-17. string.rstrip()  删除右边空格;
-18. string.center(width, 'str')  居中，width字符串长度，str填充字符，默认空格填充；
-19. string.ljust(width, 'str')   左对齐;
-20. string.rjust(width, 'str')   右对齐;
+14. string.rfind('str')       从右往左找第一个对应的值，显示的是正向索引,如果没找到匹配的值返回-1;
+15. string.index('str')       从左往右找第一个对应的值，显示的是正向索引，**如果没找到匹配的值报错**;
+16. string.count('str')       显示字符个数，如果没有显示0;
+
+17. string.strip()     删除两边空格;
+18. string.lstrip()    删除左边空格;
+19. string.rstrip()    删除右边空格;
+20. string.center(width, 'str')  居中，width字符串长度，str填充字符，默认空格填充；
+21. string.ljust(width, 'str')   左对齐;
+22. string.rjust(width, 'str')   右对齐;
 ```python
->>>str = 'runoob'
->>> str.center(20, '*')
+str = 'runoob'
+str.center(20, '*')
 '*******runoob*******'
->>> str.center(20)
+str.center(20)
 '       runoob       '
 ```
-21. string.capitalize()    将字符串首个字符变为大写;
-22. string.count('str')    统计字符出现的次数;
-23. string.isidentifier()  判断是否是一个合法的变标识符，即是否符合变量命名规则;
-24. string.islower()       判断字符串是否全部是小写,是返回True，否返回False;
-25. string.isupper()       判断字符串是否全部为大写,是返回True，否返回False;
+23. string.capitalize()    将字符串首个字符变为大写;
+24. string.count('str')    统计字符出现的次数;
 
 ***pycharm快捷键：ctrl + d:复制一行；ctrl + ?:快速注释一行|撤销 ***
 
