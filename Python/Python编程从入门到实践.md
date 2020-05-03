@@ -28,9 +28,9 @@ print(example_message)
 6. string.isalnum()  判断字符串是否全部由数字或者字母组成,是返回True，否返回False;
 7. string.isspace()  判断字符串是否全部由空格组成，是返回True，否返回False;
 
-**注意：上面判断组成的方法，字符串存在空格也会False**
+**注意：上面判断组成的方法，字符串存在空格也会返回False**
 
-8. string.find('str')  从左往右找第一个对应'str'的值，显示的是正向索引，如果没找到匹配的值返回-1;
+8. string.find('str')  从左往右找第一个对应'str'的值，显示的是正向索引，**如果没找到匹配的值返回-1**;
 如，
 ```python
 例1
@@ -45,7 +45,7 @@ print(res)
 结果输出：10
 ```
 9. string.rfind('str')        从右往左找第一个对应的值，显示的是正向索引,如果没找到匹配的值返回-1;
-10. string.index('str')        从左往右找第一个对应的值，显示的是正向索引，如果没找到匹配的值报错;
+10. string.index('str')        从左往右找第一个对应的值，显示的是正向索引，**如果没找到匹配的值报错**;
 11. string.count('str')       显示字符个数，如果没有显示0;
 12. string.startswith('str')  判断字符串是否以所选字符开头，是返回True，否返回False;
 13. string.endswith('str')    判断字符串是否以所选字段结尾，是返回True，否返回False;
