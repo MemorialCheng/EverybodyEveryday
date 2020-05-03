@@ -19,7 +19,7 @@ print(example_message)
 ```
 ## 2.2 字符串
 字符串就是一系列字符。在Python中，用引号括起来的都是字符串，其中引号可以是单引号，也可以是双引号。
-### 常见字符串操作方法
+### 常见字符串操作方法(以下对字符串的更新操作都是临时性的，不会改变原来字符串)
 1. string.title()    将每个单词的首字母改为大写，有数字不会报错;
 2. string.upper()    将字符串改为全部大写;
 3. string.lower()    将字符串改为全部小写;
@@ -27,7 +27,8 @@ print(example_message)
 5. string.isdigit()  判断字符串是否全部由数字组成,是返回True，否返回False;
 6. string.isalnum()  判断字符串是否全部由数字或者字母组成,是返回True，否返回False;
 7. string.isspace()  判断字符串是否全部由空格组成，是返回True，否返回False;
-**注意：上面存在空格也会False**
+
+**注意：上面判断组成的方法，字符串存在空格也会False**
 8. string.find('str')  从左往右找第一个对应'str'的值，显示的是正向索引，如果没找到匹配的值返回-1;
 如，
 ```python
