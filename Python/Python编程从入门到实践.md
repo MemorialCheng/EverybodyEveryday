@@ -374,6 +374,9 @@ print(minNum,maxNum,sumNum)
 ```
 ### 4.2.3 列表解析/列表生成式
 **语法**
+法1： [expression for iter_val in iterable]
+
+法2： [expression for iter_val in iterable if cond_expr]
 
 **例1. 要求：列出1~10所有数字的平方**
 ```py
