@@ -437,8 +437,11 @@ print(L3)
 ```
 ## 4.3 切片
 可用于访问列表的部分元素。
+
 **注：取的是列表索引，左闭右开，支持负数索引。返回值仍然是列表**
-推荐参考博客https://www.jianshu.com/p/15715d6f4dad
+
+推荐参考博客https://www.jianshu.com/p/15715d6f4dad ，博客介绍很清晰，这里不再赘述。
+
 **切片操作基本表达式：object[start_index:end_index:step]**
 ### 小结
 （一）start_index、end_index、step三者可同为正、同为负，或正负混合。但必须遵循一个原则，即：当start_index表示的实际位置在end_index的左边时，从左往右取值，此时step必须是正数（同样表示从左往右）；当start_index表示的实际位置在end_index的右边时，表示从右往左取值，此时step必须是负数（同样表示从右往左），即两者的取值顺序必须相同。
