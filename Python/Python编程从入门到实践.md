@@ -443,37 +443,78 @@ print(L3)
 推荐参考博客https://www.jianshu.com/p/15715d6f4dad ，博客介绍很清晰，这里不再赘述。
 
 **切片操作基本表达式：object[start_index:end_index:step]**
-### 小结
+### 切片小结
 （一）start_index、end_index、step三者可同为正、同为负，或正负混合。但必须遵循一个原则，即：当start_index表示的实际位置在end_index的左边时，从左往右取值，此时step必须是正数（同样表示从左往右）；当start_index表示的实际位置在end_index的右边时，表示从右往左取值，此时step必须是负数（同样表示从右往左），即两者的取值顺序必须相同。
 
 （二）当start_index或end_index省略时，取值的起始索引和终止索引由step的正负来决定，这种情况不会有取值方向矛盾（即不会返回空列表[]），但正和负取到的结果顺序是相反的，因为一个向左一个向右。
 
 （三）step的正负是必须要考虑的，尤其是当step省略时。比如a[-1:]，很容易就误认为是从“终点”开始一直取到“起点”，即a[-1:]= [9, 8, 7, 6, 5, 4, 3, 2, 1, 0]，但实际上a[-1:]=[9]（注意不是9），原因在于step省略时step=1表示从左往右取值，而起始索引start_index=-1本身就是对象的最右边元素了，再往右已经没数据了，因此结果只含有9一个元素。
 
+## 4.4 元组(tuple)
 
+Python的元组与列表类似，不同之处在于**元组的元素不能修改。**
 
+元组使用小括号，列表使用方括号。
 
+元组创建很简单，只需要在括号中添加元素，并使用逗号隔开即可。
+```py
+# 示例
+tup1 = ('physics', 'chemistry', 1997, 2000)
+tup2 = (1, 2, 3, 4, 5 )
+```
+元组中只包含一个元素时，需要在元素后面添加逗号
+```py
+tup1 = (50,)
+```
+### 4.4.1 访问元组
+使用索引访问其元素
+```py
+dimensions = (200, 50)
+print(dimensions[0])
+print(dimensions[1])
 
+# 输出结果
+200
+50
+```
+### 4.4.2 修改元组
+元组的元素不能修改！！！
+```py
+# 错误示例
+dimensions = (200, 50)
+dimensions[0] = 250
+报错
+TypeError: 'tuple' object does not support item assignment
+```
+**可对元组进行连接组合**
+```py
+tup1 = (12, 34.56)
+tup2 = ('abc', 'xyz')
+tup3 = tup1 + tup2
+print(tup3)
 
+# 输出结果
+(12, 34.56, 'abc', 'xyz')
+```
+**可对元组进行重新赋值**
+```py
+dimensions = (200, 50)
+print("Original dimensions:")
+for dimension in dimensions:
+    print(dimension)
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+#  重新赋值
+dimensions = (400, 100)
+print("\nModified dimensions:")
+for dimension in dimensions:
+    print(dimension)
+```
+### 4.4.3 删除元组——del语句
+元组中的元素不能删除，但可使用del语句删除真个元组。
+```py
+tup = (12, 34.56)
+del tup
+```
 
 
 
