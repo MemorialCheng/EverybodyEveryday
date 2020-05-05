@@ -526,6 +526,60 @@ for dimension in dimensions:
 tup = (12, 34.56)
 del tup
 ```
+# 第5章 if语句
+## 条件测试
+每条if语句的核心都是一个值为True或False的表达式，这种表达式被称为**条件测试**。
+### 检查是否相等(==)
+双等号两边的值相等，返回True;不等则返回False.
+```py
+# 例1
+car = 'bmw'
+car == 'bmw'
+# 输出结果
+True
+===============================
+# 例1
+car = 'audi'
+car == 'bmw'
+# 输出结果
+False
+```
+**特别解析：**
+1. 一个等号(=)，表示赋值，解读为“将变量car的值设置为audi”;
+2. 两个等号(==),表示判断，检查两边值是否相等；
+3. 双等号判断两边是否相等时严格区分大小写;
+```py
+# 大小写不同将返回False
+car = 'Audi'
+car == 'audi'
+# 输出结果
+False
+```
+4. 若只想检查变量的值，不考虑大小写，可将变量的值先转换为小写，再进行比较。
+```py
+car = 'Audi'
+car.lower() == 'audi'
+# 输出结果
+True
+```
+### 检查是否不相等(!=)
+```py
+answer = 17
+if answer != 42:
+    print('That is not the correct answer, please try again!')
+```
+**特别解析**
+数字的比较，还有大于 > ，大于等于 >= ，小于 < ，小于不等于 <=
+
+
+
+
+
+
+
+
+
+
 
 
 
