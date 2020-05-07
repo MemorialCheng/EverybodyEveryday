@@ -586,20 +586,34 @@ You're a grown man.
 **（二）或的关系用or**
 多个条件只要有一个满足即返回True!
 ```py
-age = 20
-sex = 'man'
-if age >= 18 and sex == 'man':
-    print("You're an adult.")
+phone = 'huawei'
+if phone == 'huawei' or phone == 'xiaomi':
+    print("This is a Mobile phone.")
     
 # 输出结果
-You're a grown man.
+This is a Mobile phone.
+```
+### 5.1.3 检查特定值在列表中(in)、不在列表中(not in)
+```py
+# 在列表中返回True
+requested_toppings = ['mushrooms', 'onions', 'pineapple']
+'mushrooms' in requested_toppings
+# 输出结果
+True
 
-
-
-
-
-
-
+# 不在列表中返回True
+'pepperoni' in requested_toppings
+# 输出结果
+False
+```
+```py
+banned_users = ['andrew', 'carolina', 'david']
+user = 'marie'
+if user not in banned_users:
+    print(user.title() + ", you can post a response if you wish.")
+# 输出结果
+Marie, you can post a response if you wish.
+```
 
 
 
