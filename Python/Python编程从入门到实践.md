@@ -529,7 +529,7 @@ del tup
 # 第5章 if语句
 ## 5.1 条件测试
 每条if语句的核心都是一个值为True或False的表达式，这种表达式被称为**条件测试**。
-### 检查是否相等(==)
+### 5.1.1 检查是否相等(==)
 双等号两边的值相等，返回True;不等则返回False.
 ```py
 # 例1
@@ -562,7 +562,7 @@ car.lower() == 'audi'
 # 输出结果
 True
 ```
-### 检查是否不相等(!=)
+### 5.1.2 检查是否不相等(!=)
 ```py
 answer = 17
 if answer != 42:
@@ -571,9 +571,28 @@ if answer != 42:
 **特别解析**
 数字的比较，还有大于 > ，大于等于 >= ，小于 < ，小于不等于 <=
 
-
-
-
+### 5.1.3 检查多个条件
+**（一）且的关系用and**
+多个条件同时满足才返回True!
+```py
+age = 20
+sex = 'man'
+if age >= 18 and sex == 'man':
+    print("You're a grown man.")
+    
+# 输出结果
+You're a grown man.
+```
+**（二）或的关系用or**
+多个条件只要有一个满足即返回True!
+```py
+age = 20
+sex = 'man'
+if age >= 18 and sex == 'man':
+    print("You're an adult.")
+    
+# 输出结果
+You're a grown man.
 
 
 
