@@ -622,6 +622,7 @@ if answer != 42:
 
 ### 5.1.3 检查多个条件
 **（一）且的关系用and**
+
 多个条件同时满足才返回True!
 ```py
 age = 20
@@ -633,6 +634,7 @@ if age >= 18 and sex == 'man':
 You're a grown man.
 ```
 **（二）或的关系用or**
+
 多个条件只要有一个满足即返回True!
 ```py
 phone = 'huawei'
@@ -642,7 +644,7 @@ if phone == 'huawei' or phone == 'xiaomi':
 # 输出结果
 This is a Mobile phone.
 ```
-### 5.1.3 检查特定值在列表中(in)、不在列表中(not in)
+### 5.1.4 检查特定值在列表中(in)、不在列表中(not in)
 ```py
 # 在列表中返回True
 requested_toppings = ['mushrooms', 'onions', 'pineapple']
@@ -663,6 +665,86 @@ if user not in banned_users:
 # 输出结果
 Marie, you can post a response if you wish.
 ```
+# 5.2 if语句
+
+很简单，感觉没太多好说的，就举例说明各种if表达式吧。
+**注意if后要有冒号： 后面的代码块要缩进**
+
+### 5.2.1 简单的if语句
+```py
+age = 19
+if age >= 18:
+    print("You are old enough to vote!")
+
+# 输出结果
+You are old enough to vote!
+```
+### 5.2.2 if-else 语句
+**注意if,else后要有冒号： 后面的代码块要缩进**
+```py
+age = 17
+if age >= 18:
+    print("You are old enough to vote!")
+    print("Have you registered to vote yet?")
+else:
+    print("Sorry, you are too young to vote.")
+    print("Please register to vote as soon as you turn 18!")
+    
+# 输出结果
+Sorry, you are too young to vote.
+Please register to vote as soon as you turn 18!
+```
+### 5.2.3 if-elif-else语句
+**注意if,elif,else后要有冒号，后面代码块要缩进**
+```py
+age = 12
+if age < 4:
+    price = 0
+elif age < 18:
+    price = 5
+else:
+    price = 10
+print("Your admission cost is $" + str(price) + ".")
+
+# 输出结果
+Your admission cost is $5.
+```
+### 5.2.4 可以有个elif代码块
+```py
+age = 12
+if age < 4:
+    price = 0
+elif age < 18:
+    price = 5
+elif age < 65:
+    price = 10
+else:
+    price = 5
+print("Your admission cost is $" + str(price) + ".")
+
+# 输出结果
+Your admission cost is $5.
+```
+### 5.2.5 省略else代码块
+else是一条包罗万象的语句，只要不满足任何if或elif中的条件测试，其中的代码就会执行，这可能会引入无效甚至恶意的数据。
+如果知道最终要测试的条件，应考虑使用一个elif代码块来代替else代码块。这样，你就可以肯定，仅当满足相应的条件时，你的代码才会执行。
+```py
+age = 12
+if age < 4:
+     price = 0
+elif age < 18:
+     price = 5
+elif age < 65:
+     price = 10
+elif age >= 65:
+     price = 5
+print("Your admission cost is $" + str(price) + ".")
+
+# 输出结果
+Your admission cost is $5.
+```
+
+
 
 
 
