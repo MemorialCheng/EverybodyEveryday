@@ -79,7 +79,7 @@ str.center(20)
 
 ### format() 格式化字符串
 
-# 第3章 列表
+# 第3章 列表简介
 列表是由一系列按特定顺序排列的元素组成。用方括号[]表示列表，用逗号分隔元素。
 print(列表)，输出结果是带中括号的。
 ## 3.1 访问列表
@@ -122,7 +122,7 @@ print(bicycles[0:2])
 
 ## 3.2 增、删、改列表
 ### 3.2.1 添加列表元素
-（一）在列表末尾添加元素——append()方法
+**（一）在列表末尾添加元素——append()方法**
 
 append()方法只能在列表末尾添加单个元素。
 ```python
@@ -134,7 +134,7 @@ print(bicycles)
 # 输出结果
 ['trek', 'cannondale', 'redline', 'specialized', 'haluo']
 ```
-（二）在列表末尾添加元素——extend()方法
+**（二）在列表末尾添加元素——extend()方法**
 
 extend()方法可以在列表末尾添加多个元素，可以理解为两个列表合并。
 ```python
@@ -158,7 +158,7 @@ print(bicycles)
 
 # 因为这里是将字符串'haluo'视为一个可迭代对象进行处理的。
 ```
-（三）在列表中插入元素——insert()方法
+**（三）在列表中插入元素——insert()方法**
 ```python
 bicycles = ['trek', 'cannondale', 'redline', 'specialized']
 bicycles.insert(1,'haluo')
@@ -168,7 +168,7 @@ print(bicycles)
 ['trek', 'haluo', 'cannondale', 'redline', 'specialized']
 ```
 ### 3.2.2 删除列表元素
-（一）使用del语句删除列表元素
+**（一）使用del语句删除列表元素**
 del语句结合索引可以删除指定位置的元素； 如果不指定索引，将删除整个列表。
 del语句删除元素，没有返回值，但会删除原列表的元素。
 ```python
@@ -180,8 +180,8 @@ print(bicycles)
 ['trek', 'cannondale', 'redline', 'specialized']
 ```
 
-（二）使用pop()方法删除列表元素
-pop()方法删除列表元素返回值为被删除的元素。括号中不输入索引值，则默认删除最后一个，也可指定索引删除。
+**（二）使用pop()方法删除列表元素**
+pop()方法删除列表元素返回值为被删除的元素（称为“弹出”）。括号中不输入索引值，则默认删除最后一个，也可指定索引删除。
 ```py
 bicycles = ['trek', 'haluo', 'cannondale', 'redline', 'specialized']
 bic = bicycles.pop()
@@ -197,7 +197,7 @@ __特别解析:__
 答：如果你要从列表中删除一个元素，且不再以任何方式使用这个元素时，使用del语句；
 如果你要在删除元素后继续使用这个元素，就使用pop()方法。
 
-（三）根据元素值删除列表元素——remove()方法
+**（三）根据元素值删除列表元素——remove()方法**
 remove()方法如果成功删除值则返回None;如果列表没有该值则报错list.remove(x): x not in list
 
 ```py
@@ -212,6 +212,55 @@ None
 ```
 __特别解析:__
 remove()方法只删除第一个指定的值，如果要删除的值在列表中多次出现，需要使用循环来判断是否删除了所有这样的值。
+**remove()方法删除所有相同的值有坑（1. 每一次删除一个元素，列表的长度就会发生变化，越界坑；2. 元素的索引也会发生变化，漏删坑），要注意回避，具体后面单独出文章进行分析**
+```py
+# 删除列表中为1的元素
+# 越界坑
+nums = [1,5,3,1,1,3]
+for i in range(len(nums)):
+     if nums[i]==1:
+          nums.remove(1)
+print(nums)
+# 输出报错：
+IndexError: list index out of range
+
+
+# for循环漏删坑
+nums = [1,5,3,1,1,3]
+for num in nums:
+     if num == 1:
+          nums.remove(num)
+print(nums)
+# 输出结果
+[5, 3, 1, 3]
+# 输出报错：
+IndexError: list index out of range
+
+
+# 正确写法1 ，利用for循环+range从后往前遍历
+nums = [1,5,3,1,1,3]
+for i in range(len(nums)-1,-1,-1):
+     if nums[i]==1:
+          nums.remove(1)
+print(nums)
+# 输出结果
+[5, 3, 3]
+
+# 正确写法2 ，利用列表解析式
+nums = [1,5,3,1,1,3]
+nums = [num[i]  for i in range(0, len(nums)) if nums[i] != 1]
+print(nums)
+# 输出结果
+[5, 3, 3]
+
+# 正确写法3 ，利用while循环。（还有别的实现方法这里不列举了）
+nums = [1,5,3,1,1,3]
+while 1 in nums:
+     nums.remove(1)
+print(nums)
+# 输出结果
+[5, 3, 3]
+```
 
 
 ### 3.2.3 修改列表
@@ -265,6 +314,7 @@ __特别解析__
 
 ### 3.3.2 对列表进行临时性排序——函数sorted()
 默认正序，如果需要按相反顺序排列，需向sorted()函数传递参数 reverse=True.
+函数sorted()排序后原来的排列顺序不变，临时性的。
 __格式：__
 sorted(列表名称)
 
@@ -292,7 +342,7 @@ print(newcars)
 ```
 
 ### 3.3.3 反转列表顺序——方法reverse()
-方法reverse()指的是反转列表元素的排列顺序，并且是永久性修改列表元素顺序。
+方法reverse()指的是反转列表元素的排列顺序，并且是**永久性**修改列表元素顺序。
 __格式：__
 列表名称.reverse()
 
@@ -307,8 +357,9 @@ print(cars)
 
 __特别解析__
 1. 方法的使用格式是：对象名称.方法();
-2. 函数的使用格式是：对象名称.函数();
+2. 函数的使用格式是：函数(对象名称);
 3. 函数len()可求列表的长度，返回元素个数。
+
 
 
 # 第4章 操作列表
