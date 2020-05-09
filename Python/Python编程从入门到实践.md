@@ -72,8 +72,6 @@ str.center(20, '*')
 str.center(20)
 '       runoob       '
 ```
-24. string.capitalize()    将字符串首个字符变为大写;
-25. string.count('str')    统计字符出现的次数;
 
 ***pycharm快捷键：ctrl + d:复制一行；ctrl + ?:快速注释一行|撤销 ***
 
@@ -387,7 +385,7 @@ range()函数可创建一个整数列表，一般用在 for 循环中。
 
 **语法**
 
-range(start, stop[, step])
+range(start, stop, step)
 
 参数说明：
 
