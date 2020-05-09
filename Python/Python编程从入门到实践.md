@@ -668,9 +668,10 @@ Marie, you can post a response if you wish.
 # 5.2 if语句
 
 很简单，感觉没太多好说的，就举例说明各种if表达式吧。
-**注意if后要有冒号： 后面的代码块要缩进**
+
 
 ### 5.2.1 简单的if语句
+**注意if后要有冒号： 后面的代码块要缩进**
 ```py
 age = 19
 if age >= 18:
@@ -743,8 +744,25 @@ print("Your admission cost is $" + str(price) + ".")
 # 输出结果
 Your admission cost is $5.
 ```
+### 5.2.6 测试多个条件
+if-elif-else结构功能强大，但仅适合用于只有一个条件满足的情况。有时候我们需要检查多个条件，每个条件为True时都采取相应措施。
+这是就使用多个简单的if语句（不包含elif和else).
+```py
+requested_toppings = ['mushrooms', 'extra cheese']
+if 'mushrooms' in requested_toppings:
+     print("Adding mushrooms.")
+if 'pepperoni' in requested_toppings:
+     print("Adding pepperoni.")
+if 'extra cheese' in requested_toppings:
+     print("Adding extra cheese.")
+print("\nFinished making your pizza!")
 
+# 输出结果
+Adding mushrooms.
+Adding extra cheese.
 
-
-
+Finished making your pizza!
+```
+**特别解析**
+如果你只想执行一个代码块，就使用if-elif-else结构；如果要运行多个代码块，就使用一系列独立的if语句。
 
