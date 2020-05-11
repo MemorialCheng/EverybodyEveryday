@@ -768,4 +768,4 @@ Finished making your pizza!
 
 # 第6章 字典
 ## 访问字典中的值
-
+键值对，根据键访问对应的值。
