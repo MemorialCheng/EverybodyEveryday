@@ -787,9 +787,17 @@ print(alien_0['points'])
 green
 5
 ```
+### 6.1.2 添加键-值对
+```py
+alien_0 = {'color': 'green', 'points': '5'}
+print(alien_0)
 
+alien_0['x_position'] = 0
+alien_0['y_position'] = 25
+print(alien_0)
 
+# 输出结果
 
-
+```
 
 
