@@ -803,5 +803,15 @@ print(alien_0)
 ```
 ### 6.1.3 修改字典中的值
 **字典名['key'] = 新值**
+```py
+alien_0 = {'color': 'green'}
+print("The alien is " + alien_0['color'] + ".")
+alien_0['color'] = 'yellow'
+print("The alien is now " + alien_0['color'] + ".")
+
+# 输出结果
+The alien is green.
+The alien is now yellow.
+```
 
 
