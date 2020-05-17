@@ -813,5 +813,33 @@ print("The alien is now " + alien_0['color'] + ".")
 The alien is green.
 The alien is now yellow.
 ```
+### 6.1.4 删除字典中的值
+**del 字典名['key']
+如果没有指定key，则删除整个字典
+永久性删除！！！**
+```py
+# 例1 删除字典中的值
+alien_0 = {'color': 'green', 'points': 5}
+print(alien_0)
+del alien_0['points']
+print(alien_0)
+
+# 输出结果
+{'color': 'green', 'points': 5}
+{'color': 'green'}
+```
+```py
+# 例2 删除整个字典
+alien_0 = {'color': 'green', 'points': 5}
+print(alien_0)
+del alien_0
+print(alien_0)
+
+# 输出结果
+{'color': 'green', 'points': 5}
+--------------------------
+NameError: name 'alien_0' is not defined
+```
+
 
 
