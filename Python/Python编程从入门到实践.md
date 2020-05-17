@@ -814,9 +814,9 @@ The alien is green.
 The alien is now yellow.
 ```
 ### 6.1.4 删除字典中的值
-**del 字典名['key']
-如果没有指定key，则删除整个字典
-永久性删除！！！**
+**del 字典名['key']**
+**如果没有指定key，则删除整个字典**
+**永久性删除！！！**
 ```py
 # 例1 删除字典中的值
 alien_0 = {'color': 'green', 'points': 5}
