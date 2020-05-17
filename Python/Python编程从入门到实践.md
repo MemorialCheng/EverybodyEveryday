@@ -798,7 +798,8 @@ alien_0['y_position'] = 25
 print(alien_0)
 
 # 输出结果
-
+{'color': 'green', 'points': '5'}
+{'color': 'green', 'points': '5', 'x_position': 0, 'y_position': 25}
 ```
 ### 6.1.3 修改字典中的值
 **字典名['key'] = 新值**
