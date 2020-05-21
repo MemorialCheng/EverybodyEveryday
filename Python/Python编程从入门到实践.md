@@ -866,4 +866,4 @@ NameError: name 'alien_0' is not defined
 1. 必需是闭包;
 2. 函数作为参数；
 
-
+<img src="https://github.com/MemorialCheng/EverybodyEveryday/blob/master/Python/python_images/python关键字.png" width = "500">
