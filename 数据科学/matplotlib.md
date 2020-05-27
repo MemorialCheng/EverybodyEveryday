@@ -27,6 +27,8 @@ plt.show
 ## 1.2 matplotlib图形信息设置
 ### 1.2.1 设置刻度
 
+<img src="https://github.com/MemorialCheng/EverybodyEveryday/edit/master/数据科学/images/设置中文.png" width = "500">
+
 
 ### 1.2.2 设置中文
 matplotlib默认不显示中文，当我们需要在轴刻度中显示中文时需要进行如下设置。
