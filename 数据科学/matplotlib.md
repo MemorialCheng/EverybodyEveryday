@@ -1,6 +1,7 @@
 # matplotlib学习笔记
 ---
-# 什么是matplotlib?
+# 1 什么是matplotlib?
+## 1.1 matplotlib描述
 matplotlib是最流行的python底层绘图库，主要用作数据可视化。
 
 [matplotlib画廊入口](https://matplotlib.org/)：点击画廊中的图表，即可查看用于生成图表的代码。
@@ -23,3 +24,13 @@ plt.savefig('./example1.png')
 # 展示图
 plt.show
 ```
+## 1.2 matplotlib图形信息设置
+### 1.2.1 设置刻度
+
+### 1.2.2 设置中文
+matplotlib默认不显示中文，当我们需要在轴刻度中显示中文时需要进行如下设置。
+
+
+
+
+
