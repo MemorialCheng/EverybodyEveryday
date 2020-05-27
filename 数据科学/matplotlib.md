@@ -27,11 +27,15 @@ plt.show
 ## 1.2 matplotlib图形信息设置
 ### 1.2.1 设置刻度
 
+
 ### 1.2.2 设置中文
 matplotlib默认不显示中文，当我们需要在轴刻度中显示中文时需要进行如下设置。
 1) 先查看支持的字体：fc-list
+
   查看支持的中文：fc-list :lang-zh  (冒号前有空格）
+  
 2) 如何修改matplotlib的默认字体？
+
   通过matplotlib.rc可以修改，需要修font代码块；
   ```py
   # 例如
