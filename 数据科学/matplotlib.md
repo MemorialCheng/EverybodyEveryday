@@ -14,8 +14,8 @@ from matplotlib import pyplot as plt
 x = range(2,26,2)
 y = [15,13,7,5,9,3,9,10,15,19,8,10]
 
-# 设置宽高figsize=(10, 6); 图片清晰度dpi = 100
-plt.figure(figsize=(10, 6), dpi = 100)
+# 设置宽高figsize=(10, 6); 图片清晰度dpi = 100; 背景颜色
+plt.figure(figsize=(10, 6), dpi = 100, facecolor = 'lightgray')
 
 # 画图
 plt.plot(x, y)
@@ -27,6 +27,8 @@ plt.show
 ## 1.2 matplotlib图形信息设置
 ### 1.2.1 设置刻度
 
+plt.xticks()
+plt.yticks()
 <img src="https://github.com/MemorialCheng/EverybodyEveryday/edit/master/数据科学/images/设置中文.png" width = "500">
 
 
@@ -51,8 +53,11 @@ matplotlib默认不显示中文，当我们需要在轴刻度中显示中文时�
   
 ### 1.2.3 表格添加描述信息
 ```py
-plt.title("温度随时间变化情况")
+# 设置title
+plt.title("温度随时间变化情况", fontsize=14)
+# 设置x轴
 plt.xlabel("时间")
+# 设置y轴
 plt.ylabel("温度 单位('C)")
 ```
 如果不能正常显示中文，可以按照1.2.2进行设置
