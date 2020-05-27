@@ -38,7 +38,7 @@ matplotlib默认不显示中文，当我们需要在轴刻度中显示中文时�
   
 2) 如何修改matplotlib的默认字体？
 
-  通过matplotlib.rc可以修改，需要修font代码块；
+  >通过matplotlib.rc可以修改，需要修font代码块；
   ```py
   # 例如
     font = {'family' : 'Microsoft YaHei'
@@ -46,6 +46,18 @@ matplotlib默认不显示中文，当我们需要在轴刻度中显示中文时�
             'size' : 'larger'}
      matplotlib.rc('font', **font)
   ```
+  >通过matplotlib下的font_manager进行设置
+  <img src="https://github.com/MemorialCheng/EverybodyEveryday/edit/master/数据科学/images/设置中文.png" width = "500">
+  
+### 1.2.3 表格添加描述信息
+```py
+plt.title("温度随时间变化情况")
+plt.xlabel("时间")
+plt.ylabel("温度 单位('C)")
+```
+如果不能正常显示中文，可以按照1.2.2进行设置
+
+
 
 
 
