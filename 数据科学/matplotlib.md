@@ -56,9 +56,24 @@ plt.xlabel("时间")
 plt.ylabel("温度 单位('C)")
 ```
 如果不能正常显示中文，可以按照1.2.2进行设置
-
-
-
-
+### 1.2.4 添加图例
+1）在画图时设置label参数
+```py
+plt.plot(x, y1, label = "student1")
+plt.plot(x, y1, labe2 = "student2")
+```
+2) 添加图例代码
+```py
+plt.legend(loc = "upper left")  # 不传参数loc默认自动选择一个合适的位置
+```
+### 1.2.5 设置线条颜色和风格
+在plt.plot()中设置参数
+```py
+# 颜色，风格，粗细，透明度
+color = 'r,
+linestyle = '--',
+linewidth = '5,
+alpha = '0.5'  
+```
 
 
