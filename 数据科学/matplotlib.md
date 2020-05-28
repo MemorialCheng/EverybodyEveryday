@@ -82,6 +82,14 @@ alpha = '0.5'
 ```
 # 绘制图形
 ## 绘制散点图
-用scatter
+plt.scatter(x, y)
 
 **scatter绘制散点，plot绘制经过点的曲线。**
+
+## 绘制条形图
+```py
+plt.bar(x, y, width = 0.3) # 纵向： width表示柱宽
+
+plt.barh(x, y, height = 0.3) # 横向：height表示柱宽
+
+```
