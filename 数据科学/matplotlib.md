@@ -80,5 +80,8 @@ linestyle = '--',
 linewidth = '5,
 alpha = '0.5'  
 ```
+# 绘制图形
+## 绘制散点图
+用scatter
 
 **scatter绘制散点，plot绘制经过点的曲线。**
