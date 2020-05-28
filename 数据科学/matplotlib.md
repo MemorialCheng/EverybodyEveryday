@@ -81,4 +81,4 @@ linewidth = '5,
 alpha = '0.5'  
 ```
 
-
+**scatter绘制散点，plot绘制经过点的曲线。**
