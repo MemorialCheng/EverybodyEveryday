@@ -80,13 +80,13 @@ linestyle = '--',
 linewidth = '5,
 alpha = '0.5'  
 ```
-# 绘制图形
-## 绘制散点图
+# 2 绘制图形
+## 2.1 绘制散点图
 plt.scatter(x, y)
 
 **scatter绘制散点，plot绘制经过点的曲线。**
 
-## 绘制条形图
+## 2.2 绘制条形图
 ```py
 plt.bar(x, y, width = 0.3) # 纵向： width表示柱宽
 
