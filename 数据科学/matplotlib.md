@@ -93,3 +93,7 @@ plt.bar(x, y, width = 0.3) # 纵向： width表示柱宽
 plt.barh(x, y, height = 0.3) # 横向：height表示柱宽
 
 ```
+
+## 2.3 绘制多次条形图
+
+
