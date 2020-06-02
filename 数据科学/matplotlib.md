@@ -129,7 +129,7 @@ plt.bar(x_16, b_16, width = bar_width, label = "September 16th")
 plt.legend()
 
 # 设置刻度
-plt.xticks(x_14, a)
+plt.xticks(b_14, a)
 
 plt.show()
 ```
