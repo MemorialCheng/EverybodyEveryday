@@ -149,7 +149,11 @@ font1 = {'family' : 'STSong',
 plt.legend(prop=font1)
 
 # 设置刻度 , 设置倾斜度rotation= 45，设置字体 fontproperties=my_font
+y_loc = list(range(0,16001,2000))
+y_labels = list(map(str, y_loc))
+
 plt.xticks(x_15, a, rotation = 45, fontproperties = my_font)
+plt.yticks(y_loc, y_labels,fontproperties = my_font)
 
 # 保存图片
 plt.savefig('多个柱状图.png')
@@ -157,4 +161,5 @@ plt.savefig('多个柱状图.png')
 # 展示图
 plt.show()
 ```
+ <img src="https://github.com/MemorialCheng/EverybodyEveryday/edit/master/数据科学/images/多个柱状图.png" width = "500">
 
