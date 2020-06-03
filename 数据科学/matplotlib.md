@@ -69,7 +69,8 @@ plt.plot(x, y1, labe2 = "student2")
 ```
 2) 添加图例代码
 ```py
-plt.legend(loc = "upper left")  # 不传参数loc默认自动选择一个合适的位置
+plt.legend(loc = "upper left", prop={'size':6})  # 不传参数loc默认自动选择一个合适的位置, prop={'size':6} 设置属性
+
 ```
 ### 1.2.5 设置线条颜色和风格
 在plt.plot()中设置参数
@@ -138,7 +139,7 @@ plt.bar(x_15, b_15, width = bar_width, label = "September 15th")
 plt.bar(x_16, b_16, width = bar_width, label = "September 16th")
 
 # 设置图例
-plt.legend()
+plt.legend(prop={'size':15})
 
 # 设置刻度 , 设置倾斜度rotation= 45，设置字体 fontproperties=my_font
 plt.xticks(x_15, a, rotation = 45, fontproperties = my_font)
