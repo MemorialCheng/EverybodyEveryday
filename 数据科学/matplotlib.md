@@ -19,8 +19,10 @@ plt.figure(figsize=(10, 6), dpi = 100, facecolor = 'lightgray')
 
 # 画图
 plt.plot(x, y)
+
 # 保存图片
 plt.savefig('./example1.png')
+
 # 展示图
 plt.show
 ```
@@ -134,17 +136,25 @@ x_16 = [i + bar_width*2 for i in x_14]
 # 设置图形大小
 plt.figure(figsize = (20, 8), dpi = 80)
 
-plt.bar(x_14, b_14, width = bar_width, label = "September 14th")
-plt.bar(x_15, b_15, width = bar_width, label = "September 15th")
-plt.bar(x_16, b_16, width = bar_width, label = "September 16th")
+# 画图
+plt.bar(x_14, b_14, width = bar_width, label = "9月14日")
+plt.bar(x_15, b_15, width = bar_width, label = "9月15日")
+plt.bar(x_16, b_16, width = bar_width, label = "9月16日")
 
-# 设置图例
-plt.legend(prop={'size':15})
+#设置图例并且设置图例的字体及大小
+font1 = {'family' : 'STSong',
+'weight' : 'normal',
+'size'   : 15,
+}
+plt.legend(prop=font1)
 
 # 设置刻度 , 设置倾斜度rotation= 45，设置字体 fontproperties=my_font
 plt.xticks(x_15, a, rotation = 45, fontproperties = my_font)
 
-# 画图
+# 保存图片
+plt.savefig('多个柱状图.png')
+
+# 展示图
 plt.show()
 ```
 
