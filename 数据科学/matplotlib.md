@@ -106,6 +106,18 @@ b_14 = [2358,399,2358,362]
 
 ```py
 from matplotlib import pyplot as plt
+from matplotlib import font_manager
+
+# 设置中文
+# 法1
+# font = {'family': 'MicroSoft YaHei',
+#         'weight': 'bold'
+#        'size': 20}
+# matplotlib.rc("font", **font)
+
+# 法2
+# my_font = font_manager.FontProperties(fname = "C:\Windows\Fonts\STFANGSO.TTF", size = 20)
+my_font = font_manager.FontProperties(fname = "C:\Windows\Fonts\STFANGSO.TTF", size = 20)
 
 a = ["猩球崛起3：终极之战","敦刻尔克","蜘蛛侠：英雄归来","战狼2"]
 b_16 = [15746,312,4497,319]
@@ -128,9 +140,10 @@ plt.bar(x_16, b_16, width = bar_width, label = "September 16th")
 # 设置图例
 plt.legend()
 
-# 设置刻度
-plt.xticks(b_14, a)
+# 设置刻度 , 设置倾斜度rotation= 45，设置字体 fontproperties=my_font
+plt.xticks(x_15, a, rotation = 45, fontproperties = my_font)
 
+# 画图
 plt.show()
 ```
 
