@@ -24,6 +24,8 @@ https://baijiahao.baidu.com/s?id=1635933482287434194&wfr=spider&for=pc
 https://zhuanlan.zhihu.com/p/46652512
 
 
+情感分析
+
 
 
 事件抽取+知识图谱
