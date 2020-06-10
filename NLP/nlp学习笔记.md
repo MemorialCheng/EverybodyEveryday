@@ -24,8 +24,6 @@ https://baijiahao.baidu.com/s?id=1635933482287434194&wfr=spider&for=pc
 https://zhuanlan.zhihu.com/p/46652512
 
 
-情感分析
-
 
 
 事件抽取+知识图谱
@@ -36,3 +34,6 @@ https://zhuanlan.zhihu.com/p/46652512
 
 天池 k
 
+情感分析
+
+常见的基于情感词典，基于机器学习
