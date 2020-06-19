@@ -45,3 +45,7 @@ https://zhuanlan.zhihu.com/p/46652512
 
 
 基于Bert细粒度情感分析
+
+Bert模型改进
+
+
