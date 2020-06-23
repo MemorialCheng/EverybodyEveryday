@@ -36,7 +36,7 @@ https://zhuanlan.zhihu.com/p/46652512
 
 情感分析
 
-常见的基于情感词典，基于机器学习
+常见的基于情感词典，基于机器学习，深度学习
 
 
 事件抽取
@@ -48,4 +48,5 @@ https://zhuanlan.zhihu.com/p/46652512
 
 Bert模型改进
 
+神经网络CNN,RNN
 
