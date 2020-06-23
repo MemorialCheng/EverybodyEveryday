@@ -1,5 +1,9 @@
 自然语言处理NLP学习笔记
 
+
+NLP入门数据集：影评 http://ai.stanford.edu/~amaas/data/sentiment/
+AI Challenger 2018 细粒度用户评论情感分析  https://github.com/AIChallenger/AI_Challenger_2018/tree/master/Baselines/sentiment_analysis2018_baseline
+
 金融公司公告新闻分类
 
 
