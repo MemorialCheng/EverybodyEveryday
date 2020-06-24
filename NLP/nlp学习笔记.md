@@ -58,3 +58,5 @@ Bert模型改进
 
 Seq2Seq
 
+Word2Vec
+
