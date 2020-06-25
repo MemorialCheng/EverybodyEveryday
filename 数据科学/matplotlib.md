@@ -84,6 +84,27 @@ linewidth = '5,
 alpha = '0.5'  
 ```
 # 2 绘制图形
+## 2.1 绘制折线图
+plt.plot(x, y)
+```py
+from matplotlib import pyplot as plt
+
+x = range(2, 26, 2)
+y = [15,13,7,5,9,3,9,10,15,19,8,10]
+
+# 设置宽高figsize=(10,6); 图片清晰度dpi=100
+plt.figure(figsize=(7, 4), dpi = 100)
+
+# 画图
+plt.plot(x, y)
+
+# 保存图片
+plt.savefig('./example01.png')
+
+# 展示图
+plt.show
+```
+
 ## 2.1 绘制散点图
 plt.scatter(x, y)
 
@@ -134,7 +155,7 @@ x_15 = [i + bar_width for i in x_14]
 x_16 = [i + bar_width*2 for i in x_14]
 
 # 设置图形大小
-plt.figure(figsize = (20, 8), dpi = 80)
+plt.figure(figsize = (10, 4), dpi = 100)
 
 # 画图
 plt.bar(x_14, b_14, width = bar_width, label = "9月14日")
@@ -157,6 +178,15 @@ plt.yticks(y_loc, y_labels,fontproperties = my_font)
 
 # 保存图片
 plt.savefig('多个柱状图.png')
+
+# 表格添加描述信息
+# 设置title
+plt.title("9月14-16日电影票房统计", fontproperties = my_font, fontsize=14)
+# 设置x轴
+plt.xlabel("电影名称", fontproperties = my_font, fontsize = 15)
+# 设置y轴
+plt.ylabel("票房数量", fontproperties = my_font, fontsize = 15)
+
 
 # 展示图
 plt.show()
