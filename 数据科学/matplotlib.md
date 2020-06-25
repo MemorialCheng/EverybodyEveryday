@@ -45,8 +45,8 @@ matplotlib默认不显示中文，当我们需要在轴刻度中显示中文时�
   >通过matplotlib.rc可以修改，需要修font代码块；
   ```py
   # 例如
-    font = {'family' : 'Microsoft YaHei'
-            'weight' : 'bold'
+    font = {'family' : 'Microsoft YaHei',
+            'weight' : 'bold',
             'size' : 'larger'}
      matplotlib.rc('font', **font)
   ```
