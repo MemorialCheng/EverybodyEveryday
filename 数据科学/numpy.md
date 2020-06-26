@@ -27,7 +27,10 @@ print(t3)
 print(t3.dtype)
 ```
 
-## 生成矩阵
+## 1.2生成矩阵
 
 
-## 转置 t.transpose()
+## 1.3 改变矩阵形状 reshape()
+
+
+## 1.4 转置 t.transpose()
