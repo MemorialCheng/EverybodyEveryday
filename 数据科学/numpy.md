@@ -46,3 +46,13 @@ t.clip(10, 18)
 ## 1.7 astype()改变数据类型
 改为浮点型
 t.astype(float)
+
+## 1.8 数组拼接
+将t1和t2进行垂直拼接
+
+np.vstack(t1, t2)
+
+
+将t1和t2进行水平拼接
+
+np.hstack(t1, t2)
