@@ -34,3 +34,15 @@ print(t3.dtype)
 
 
 ## 1.4 转置 t.transpose()
+
+## 1.5 numpy的三元表达式
+小于10的设为2，否则为5
+np.where(t<10, 2, 5) 
+
+## 1.6 clip 裁剪
+小于10的替换为10，大于18的替换为18
+t.clip(10, 18)
+
+## 1.7 astype()改变数据类型
+改为浮点型
+t.astype(float)
