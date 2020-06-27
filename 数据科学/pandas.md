@@ -11,5 +11,5 @@ t.values()
 t.dtypes()
 
 t.ndim()
-
+<img src="https://github.com/MemorialCheng/EverybodyEveryday/blob/master/数据科学/images/pandas01.png" width = "500">
 
