@@ -31,7 +31,7 @@ plt.show
 
 plt.xticks()
 plt.yticks()
-<img src="https://github.com/MemorialCheng/EverybodyEveryday/edit/master/数据科学/images/设置中文.png" width = "500">
+<img src="https://github.com/MemorialCheng/EverybodyEveryday/blob/master/数据科学/images/设置中文.png" width = "500">
 
 
 ### 1.2.2 设置中文
@@ -51,7 +51,7 @@ matplotlib默认不显示中文，当我们需要在轴刻度中显示中文时�
      matplotlib.rc('font', **font)
   ```
   >通过matplotlib下的font_manager进行设置
-  <img src="https://github.com/MemorialCheng/EverybodyEveryday/edit/master/数据科学/images/设置中文.png" width = "500">
+  <img src="https://github.com/MemorialCheng/EverybodyEveryday/blob/master/数据科学/images/设置中文.png" width = "500">
   
 ### 1.2.3 表格添加描述信息
 ```py
@@ -191,7 +191,8 @@ plt.ylabel("票房数量", fontproperties = my_font, fontsize = 15)
 # 展示图
 plt.show()
 ```
- <img src="https://github.com/MemorialCheng/EverybodyEveryday/edit/master/数据科学/images/多个柱状图.png" width = "500">
+ <img src="https://github.com/MemorialCheng/EverybodyEveryday/blob/master/数据科学/images/多个柱状图.png" width = "500">
+ 
 ## 2.5 绘制直方图
 
 ``py
