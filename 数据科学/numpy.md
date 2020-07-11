@@ -84,7 +84,9 @@ np.multiply(x1, x2)
 表示x1和x2相乘
 
 
-
+## 1.14 log值
+np.log(x)
+表示计算x的log值
 
 
 
