@@ -49,7 +49,12 @@ x = datas.iloc[:,:].as_matrix()
 
 FutureWarning: Method .as_matrix will be removed in a future version. Use .values instead.
 
-__可以用values
+__可以用values__
 ```py
 x = datas.iloc[:,:].values  # 注意values后没有括号
+```
+__astype() 转换array中元素数据类型__
+```py
+# 好像也可以转换为数组类型
+array = np.array(df).astype(float)
 ```
