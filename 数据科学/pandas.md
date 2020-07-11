@@ -33,4 +33,8 @@ t.fillna(t.mean())
 t["age"] = t["age"].fillna(t["age"].mean())
 
 
+### insert插入函数
 
+data.insert(0, 'One', 1)
+
+参数说明：0，表示在0列位置插入; 'One'表示插入的这一列命为One; 1 表示插入的值。
