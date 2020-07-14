@@ -88,6 +88,24 @@ np.multiply(x1, x2)
 np.log(x)
 表示计算x的log值
 
+## 1.15 np.pad()填充
+语法结构：
+```py
+pad(array, pad_width, mode, **kwargs)
+
+# 返回值：数组
+```
+
+卷积网络中常用到padding
+```py
+np.pad(arr3D, ((0, 0), (1, 1), (2, 2)), 'constant')
+```
+
+
+
+参考博客 https://blog.csdn.net/zenghaitao0128/article/details/78713663?utm_medium=distribute.pc_relevant.none-task-blog-BlogCommendFromMachineLearnPai2-1.nonecase&depth_1-utm_source=distribute.pc_relevant.none-task-blog-BlogCommendFromMachineLearnPai2-1.nonecase
+
+
 
 
 # python中axis=0 axis=1的理解
