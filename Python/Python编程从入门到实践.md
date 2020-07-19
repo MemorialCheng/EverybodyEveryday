@@ -868,3 +868,15 @@ NameError: name 'alien_0' is not defined
 
 <img src="https://github.com/MemorialCheng/EverybodyEveryday/blob/master/Python/python_images/装饰器参数.png" width = "500">
 
+
+# 数据结构
+## 栈(stack)
+“先进后出”，只能从顶端(top)push，且从顶端pop.
+
+
+## 队列(queue)
+只能从一端进行插入操作，从另一端进行删除操作的线性表。
+
+“先进先出”(First in First Out)
+
+
