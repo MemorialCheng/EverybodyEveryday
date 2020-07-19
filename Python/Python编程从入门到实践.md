@@ -871,7 +871,8 @@ NameError: name 'alien_0' is not defined
 
 # 数据结构
 ## 栈(stack)
-“先进后出”，只能从顶端(top)push，且从顶端pop.
+栈，也称堆栈，是一种容器，只能从一端(top)加入数据push和输出数据pop.
+“先进后出”(Last In First Out)
 
 
 ## 队列(queue)
