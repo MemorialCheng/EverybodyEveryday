@@ -9,3 +9,5 @@ Deep Learning,深度学习（花书）;
 动手学深度学习（李沐）;
 
 《Python从入门到实践》;
+
+Netch科学上网
