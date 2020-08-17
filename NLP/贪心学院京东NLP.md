@@ -14,5 +14,6 @@
 > paper网站推荐： https://arxiv.org/
 
 ### 1.1.2 NLP常见基础任务
+分词
 
 
