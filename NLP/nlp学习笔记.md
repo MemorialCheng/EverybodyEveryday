@@ -62,7 +62,13 @@ Word2Vec
 
 # 1 词向量
 ## One-hot
-泛化能力弱
+容易发生泛化能力弱的情况，过拟合，local泛化能力
 
 ## global generation of distributed representation
-泛化能力强
+泛化能力强，global泛化能力
+
+## 词向量分为两个方向
+>上线文无关：Skip-Gran,CBOW ...
+Skip-Gran用中间词预测两边的，CBOW用两边预测中间的
+
+>上线文有关：ELMo,Bert...
