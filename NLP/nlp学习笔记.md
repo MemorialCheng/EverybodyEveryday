@@ -73,3 +73,6 @@ Word2Vec
 Skip-Gran用中间词预测两边的，CBOW用两边预测中间的
 
 >上线文有关：ELMo,Bert...
+
+## 负采样 Negative Samping
+
