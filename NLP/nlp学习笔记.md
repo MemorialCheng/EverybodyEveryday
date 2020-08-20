@@ -60,3 +60,9 @@ Seq2Seq
 
 Word2Vec
 
+# 1 词向量
+## One-hot
+泛化能力弱
+
+## global generation of distributed representation
+泛化能力强
