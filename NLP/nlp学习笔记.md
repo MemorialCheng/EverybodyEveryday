@@ -69,6 +69,7 @@ Word2Vec
 
 ## 词向量分为两个方向
 >上线文无关：Skip-Gran,CBOW ...
+
 Skip-Gran用中间词预测两边的，CBOW用两边预测中间的
 
 >上线文有关：ELMo,Bert...
