@@ -51,3 +51,13 @@ __分布式表示 (distributed representation)__
 > glove：基于全局预料，结合了LSA和word2vec的优点；
 
 > ELMo、GPT、bert：动态特征，可以解决一词多义的问题。
+
+## 3.2 词向量的训练
+### 3.2.1 word2vec
+__word2vec两种模型：__
+CBOW:根据中心词周围的词来预测中心词（根据上下文预测中心词）；
+
+Skip-gram:根据中心词来预测周围词（根据中心词预测上下文）。
+
+__经验来说，Skip-gram更好一些__
+
