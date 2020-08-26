@@ -70,3 +70,24 @@ __经验来说，Skip-gram更好一些__
 5) 得到向量 {1*V} 激活函数处理得到V-dim概率分布，概率最大的index所指示的单词为预测出的中间词（target word）
 6) 与true label的onehot做比较，误差越小越好
 
+# 4 week04
+## 4.1 工业界模型训练和部署
+### 4.1.1 需求分析
+### 4.1.2 数据生成
+### 4.1.3 模型训练
+### 4.1.4 模型验证
+准确率(Accuracy):所有样本中预测正确的<br>
+Accuracy=(TN+TP)/(TN+FN+TP+FP)
+
+召回率(Recall): 真实值为正样本中预测正确的<br>
+Recall=TP/(TP+FN)
+
+精确率(Precision): 预测值为正样本中预测正确的<br>
+Precision=TP/(FP+TP)
+
+F1-score=(2*Precision*Recall)/(Precision+Recall)
+
+### 4.1.5 模型部署
+
+### 4.1.6 实战分享
+## 模型验证
