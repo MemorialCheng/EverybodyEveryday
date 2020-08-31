@@ -20,7 +20,19 @@ NLP分为自然语言理解NLU,自然语言生成NLG
 贝叶斯、决策树、SVM、神经网络、强化学习
 
 # 2 week02 多分类文本处理与特征工程
+## 2.1 语言模型基础
+LM:Unigram,Biggram,N-gram
+
+Smoothing:Laplace Smoothing(Add-one Smoothing, Add-k Smoothing)
+
+预处理
+
 perplexity
+
+autoregressive model: XLNet,ELMo;
+autoencoding:Bert
+
+## 2.2 语言模型在拼写纠错(spell correction)中的应用
 
 
 
