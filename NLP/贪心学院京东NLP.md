@@ -34,7 +34,22 @@ autoencoding:Bert
 
 ## 2.2 语言模型在拼写纠错(spell correction)中的应用
 
+Distributional
 
+矩阵分解：global，能更好的反应全局信息
+
+Word2vec:Skip-gram,CBOW
+
+Glove:将全局（矩阵分解）和局部（skip-gram）结合
+
+Gaussian Embedding:学习出来的模型设置可信度？
+
+OOV(Out-of-Vocahulang)
+
+FastText:主要解决OOV问题
+4-gram
+
+contextualized Embeding
 
 # 3 week03
 ## 3.1 词向量的训练以及使用
