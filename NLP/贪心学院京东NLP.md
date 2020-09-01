@@ -101,6 +101,33 @@ __经验来说，Skip-gram更好一些__
 5) 得到向量 {1*V} 激活函数处理得到V-dim概率分布，概率最大的index所指示的单词为预测出的中间词（target word）
 6) 与true label的onehot做比较，误差越小越好
 
+### 2.4.3 Glove的使用
+官方glove，C实现： https://github.com/stanfordnlp/GloVe
+
+Python 实现： https://github.com/maciejkula/glove-python
+
+.安装
+pip install glove_python
+
+glove的使用：https://blog.csdn.net/sinat_26917383/article/details/83029140
+
+## 2.5 ELMo、GPT、BERT
+
+特征提取器：elmo采用LSTM进行提取，GPT和bert则采用Transformer进行提取。很多任务表明Transformer特征提取能力强于LSTM，elmo采用1层静态向量+2层LSTM，多层提取能力有限，而GPT和bert中的Transformer可采用多层，并行计算能力强
+
+单/双向语言模型：
+GPT采用单向语言模型，ELMo和BERT采用双向语言模型
+
+GPT和BERT都采用Transformer，Transformer是Encoder-Decoder结构，GPT的单向语言模型采用Decoder结构，Decoder的部分见到的都是不完整的句子；BERT的双向语言模型则采用Encoder部分，能够看到完整句子
+
+### 2.5.1 BERT源码阅读
+BERT源码阅读
+http://fancyerii.github.io/2019/03/09/bert-codes/
+
+BERT源代码
+https://github.com/google-research/bert
+
+
 # 4 week04
 ## 4.1 工业界模型训练和部署
 ### 4.1.1 需求分析
