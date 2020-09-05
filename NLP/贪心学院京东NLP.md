@@ -176,9 +176,8 @@ __尽量使用真实场景下分布均匀的数据构建一个数据集，用来
 ### 3.1.1 pytorch安装
 
 安装pytorch参考博客链接：
-[参考链接1](https://blog.csdn.net/weixin_38314865/article/details/100306832?biz_id=102&utm_term=torch%E5%9C%A8pycharm%E9%87%8C%E5%AF%BC%E5%85%A5&utm_medium=distribute.pc_search_result.none-task-blog-2~all~sobaiduweb~default-1-100306832&spm=1018.2118.3001.4187)  |  
-[参考链接2](https://blog.csdn.net/weixin_38314865/article/details/102410673)  |  
-[参考链接2](https://blog.csdn.net/WannaSeaU/article/details/88427010)
+
+[参考链接1](https://blog.csdn.net/weixin_38314865/article/details/100306832?biz_id=102&utm_term=torch%E5%9C%A8pycharm%E9%87%8C%E5%AF%BC%E5%85%A5&utm_medium=distribute.pc_search_result.none-task-blog-2~all~sobaiduweb~default-1-100306832&spm=1018.2118.3001.4187)  |  [参考链接2](https://blog.csdn.net/weixin_38314865/article/details/102410673)  |  [参考链接2](https://blog.csdn.net/WannaSeaU/article/details/88427010)
 
 __梳理总结__
 
