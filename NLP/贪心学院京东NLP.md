@@ -220,6 +220,7 @@ print()
 print('======to and from numpy and pytorch======')
 print(torch.from_numpy(x_numpy))
 print(x_torch.numpy())
+print()
 print('======x_numpy, x_torch======')
 print(x_numpy, x_torch)
 print()
@@ -232,7 +233,36 @@ print()
 ======to and from numpy and pytorch======
 tensor([0.1000, 0.2000, 0.3000], dtype=torch.float64)
 [0.1 0.2 0.3]
+
 ======x_numpy, x_torch======
 [0.1 0.2 0.3] tensor([0.1000, 0.2000, 0.3000])
 ```
+- 均匀分布：torch.rand()
+
+- 标准正态分布：torch.randn()
+
+- 离散正态分布：torch.normal()
+
+- 线性间距向量：torch.linespace()
+
+- 求范数norm ,默认二阶范数
+```py
+print(np.linalg.norm(x_numpy), torch.norm(x_torch))
+```
+```py
+0.37416573867739417 tensor(0.3742)
+```
+
+- x.item(),x.data
+```py
+xx = torch.tensor([5.0])
+print(xx.item())
+print(xx.data)
+```
+```py
+# 输出结果
+5.0
+tensor([5.])
+```
+
 
