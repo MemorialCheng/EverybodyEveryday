@@ -172,8 +172,8 @@ __尽量使用真实场景下分布均匀的数据构建一个数据集，用来
 ## 自然语言处理中的数据增强
 
 # 4 week04
-## 3.1 pytorch使用
-### 3.1.1 pytorch安装
+## 4.1 pytorch使用
+### 4.1.1 pytorch安装
 
 安装pytorch参考博客链接：
 
@@ -200,5 +200,39 @@ conda install pytorch torchvision cpuonly -c pytorch
 
 [在jupyter notebook 打开已经建立好了的虚拟环境](https://blog.csdn.net/csdnhuizhu/article/details/105257845?biz_id=102&utm_term=jypyter%E6%89%93%E5%BC%80%E8%87%AA%E5%B7%B1%E6%90%AD%E5%BB%BA%E5%A5%BD%E7%9A%84%E7%8E%AF%E5%A2%83&utm_medium=distribute.pc_search_result.none-task-blog-2~all~sobaiduweb~default-0-105257845&spm=1018.2118.3001.4187)
 
+## 4.2 pytorch常用操作
+### 4.2.1 pytorch的tensor 与 numpy中的ndarray相互转换
+- ndarray ——> tensor : __torch.from_numpy(np_arr)__
 
+- tensor ——> ndarray : __tor_arr.numpy()__
+```py
+import numpy as np
+import torch
+ 
+# 创建np array 和 创建 tensor 的方法 类似
+x_numpy = np.array([0.1, 0.2, 0.3])
+x_torch = torch.tensor([0.1, 0.2, 0.3])
+print('======x_numpy, x_torch=========')
+print(x_numpy, x_torch)
+print()
+
+# Tensor 和 numpy 的转换  不改变原来的
+print('======to and from numpy and pytorch======')
+print(torch.from_numpy(x_numpy))
+print(x_torch.numpy())
+print('======x_numpy, x_torch======')
+print(x_numpy, x_torch)
+print()
+```
+```py
+# 输出结果
+======x_numpy, x_torch=========
+[0.1 0.2 0.3] tensor([0.1000, 0.2000, 0.3000])
+
+======to and from numpy and pytorch======
+tensor([0.1000, 0.2000, 0.3000], dtype=torch.float64)
+[0.1 0.2 0.3]
+======x_numpy, x_torch======
+[0.1 0.2 0.3] tensor([0.1000, 0.2000, 0.3000])
+```
 
