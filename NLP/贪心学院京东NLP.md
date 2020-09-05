@@ -170,3 +170,36 @@ __尽量使用真实场景下分布均匀的数据构建一个数据集，用来
 模型算法
 ## 评价指标
 ## 自然语言处理中的数据增强
+
+# 4 week04
+## 3.1 pytorch使用
+### 3.1.1 pytorch安装
+
+安装pytorch参考博客链接：
+[参考链接1](https://blog.csdn.net/weixin_38314865/article/details/100306832?biz_id=102&utm_term=torch%E5%9C%A8pycharm%E9%87%8C%E5%AF%BC%E5%85%A5&utm_medium=distribute.pc_search_result.none-task-blog-2~all~sobaiduweb~default-1-100306832&spm=1018.2118.3001.4187)
+[参考链接2](https://blog.csdn.net/weixin_38314865/article/details/102410673)
+[参考链接2](https://blog.csdn.net/WannaSeaU/article/details/88427010)
+
+__梳理总结__
+
+- 添加清华镜像源
+```py
+conda config --add channels https://mirrors.tuna.tsinghua.edu.cn/anaconda/pkgs/free/
+conda config --add channels https://mirrors.tuna.tsinghua.edu.cn/anaconda/pkgs/main/
+conda config --set show_channel_urls yes
+```
+- 新建编程环境
+```py
+conda create -n pytorch_cpu_py36 python=3.6
+```
+- 安装pytorch  （如果还是慢可删除-c pytorch）
+```py
+conda install pytorch torchvision cpuonly -c pytorch
+```
+- 安装好后如果在pycharm使用需要配置新建环境下的python编译器
+- 如果在jupyter notebook中使用新建环境，可以参考下面链接
+
+[在jupyter notebook 打开已经建立好了的虚拟环境](https://blog.csdn.net/csdnhuizhu/article/details/105257845?biz_id=102&utm_term=jypyter%E6%89%93%E5%BC%80%E8%87%AA%E5%B7%B1%E6%90%AD%E5%BB%BA%E5%A5%BD%E7%9A%84%E7%8E%AF%E5%A2%83&utm_medium=distribute.pc_search_result.none-task-blog-2~all~sobaiduweb~default-0-105257845&spm=1018.2118.3001.4187)
+
+
+
