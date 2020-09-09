@@ -76,3 +76,8 @@ Skip-Gran用中间词预测两边的，CBOW用两边预测中间的
 
 ## 负采样 Negative Samping
 
+
+
+
+
+# Transformor
