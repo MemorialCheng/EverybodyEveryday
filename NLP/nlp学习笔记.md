@@ -81,3 +81,5 @@ Skip-Gran用中间词预测两边的，CBOW用两边预测中间的
 
 
 # Transformor
+
+# BERT
