@@ -83,3 +83,5 @@ Skip-Gran用中间词预测两边的，CBOW用两边预测中间的
 # Transformor
 
 # BERT
+
+方面级情感分享、细粒度情感分享
