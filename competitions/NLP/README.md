@@ -48,7 +48,7 @@ Bagging就是采用有放回的方式进行抽样，用抽样的样本建立子�
 
 - Boosting  
 基于Boosting思想的有AdaBoost、GBDT等  
-随机森林、Adaboost、GBDT、XGBoost的区别是什么？
-
+随机森林、Adaboost、GBDT、XGBoost的区别是什么？  
+- Stacking  
 
 
