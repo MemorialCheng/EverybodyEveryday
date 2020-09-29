@@ -274,6 +274,7 @@ tensor([5.])
 - 流畅性评价ppl
 - 词槽(slot)填充:如订票
 
+attention
 
 
 
