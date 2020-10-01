@@ -61,6 +61,9 @@ BERT多层表示的动态权重融合
 - CRF  
 - MEMM
 - HMM
+softmax没有直接考虑输出的上下文关联，CRF在输出端显式的考虑了上下文关联。  
+
+CRF转移矩阵，重点理解。  
 
 https://kexue.fm/archives/5542  
 https://kexue.fm/archives/7213  
