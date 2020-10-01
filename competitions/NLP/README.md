@@ -56,3 +56,12 @@ BERT+BiLSTM+CRF
 BERT+IDCNN+CRF  
 BERT多层表示的动态权重融合  
 
+## 解码器
+- Softmax  
+- CRF  
+- MEMM
+- HMM
+
+https://kexue.fm/archives/5542  
+https://kexue.fm/archives/7213  
+
