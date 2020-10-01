@@ -52,3 +52,7 @@ Bagging就是采用有放回的方式进行抽样，用抽样的样本建立子�
 - Stacking  
 
 
+BERT+BiLSTM+CRF  
+BERT+IDCNN+CRF  
+BERT多层表示的动态权重融合  
+
