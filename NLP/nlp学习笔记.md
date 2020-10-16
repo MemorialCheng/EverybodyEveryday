@@ -120,6 +120,31 @@ bert4keras
 
 
 
+# anaconda安装指定版本tensorflow
+
+conda install --channel https://conda.anaconda.org/anaconda tensorflow=2.3.1
+或
+pip install --ignore-installed --upgrade tensorflow==2.3.1
+或  推荐
+pip install -i https://pypi.tuna.tsinghua.edu.cn/simple tensorflow-gpu==2.1.0
+
+conda update -n pytorch_cpu_py36 conda
+
+pip install -i https://pypi.tuna.tsinghua.edu.cn/simple keras==2.3.1
+pip install -i https://pypi.tuna.tsinghua.edu.cn/simple bert4keras==0.8.3
+
+
+cuda下载链接：
+https://developer.nvidia.com/rdp/cuda-toolkit-archive
+cuDNN下载链接:
+https://developer.nvidia.com/rdp/cudnn-archive
+对应版本要求：
+https://tensorflow.google.cn/install/source_windows
+
+
+
+
+
 
 
 
