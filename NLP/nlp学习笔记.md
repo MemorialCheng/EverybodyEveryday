@@ -143,6 +143,8 @@ https://tensorflow.google.cn/install/source_windows
 
 
 
+分配完GPU后，使用命令查看：
+!nvidia-smi
 
 
 
