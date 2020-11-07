@@ -11,6 +11,14 @@ TensorFlow学习笔记
 2-D|2|矩阵(matrix)|m=[[1,2,3],[1,2,3],[1,2,3]]
 n-D|n|张量(tensor)|t=[[[...
 
+
+## 计算图(Graph):搭建神经网络的计算过程，只搭建，不运算。
+
+### multiply和matmul区别：
+multiply对应元素相乘
+matmul矩阵相乘
+https://www.cnblogs.com/AlvinSui/p/8987707.html
+
 ## 1.1 数据类型
 tf.float32  
 tf.int32  
