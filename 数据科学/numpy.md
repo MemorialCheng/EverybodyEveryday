@@ -121,6 +121,6 @@ __轴用来为超过一维的数组定义的属性，二维数据拥有两个轴
 
 当考虑了方向，即axis=1为横向，axis=0为纵向，而不是行和列，那么所有的例子就都统一了。
 
-
+博客解释很到位:https://blog.csdn.net/weixin_37821353/article/details/88367211  
 
 data.shape
