@@ -58,3 +58,26 @@ __astype() 转换array中元素数据类型__
 # 好像也可以转换为数组类型
 array = np.array(df).astype(float)
 ```
+
+
+
+# pandas中isin()函数及其逆函数使用
+删选过滤掉DataFrame中一些行
+https://blog.csdn.net/lzw2016/article/details/80472649
+
+# pandas重置DataFrame或Series的索引index--reset_index()
+https://blog.csdn.net/qq_36523839/article/details/80640139
+
+# DataFrame常见操作
+https://www.cnblogs.com/lantingg/p/8280143.html
+df = df.drop([16,17])
+
+# 正则化
+w前面加了反斜杠，是\w,与[a-zA-Z0-9_]等价，
+
+# pandas打乱数据,划分数据集
+https://blog.csdn.net/qq_33187136/article/details/105413899
+
+# dataframe
+行数:len(df), df.shape[0]
+列数:df.shape[1]
