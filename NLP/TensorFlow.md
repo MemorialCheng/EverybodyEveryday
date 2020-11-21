@@ -25,6 +25,22 @@ tf.int32
 ...
 
 
+```py
+
+# TensorFlow导包警告
+import os
+os.environ['TF_CPP_MIN_LOG_LEVEL'] = '2'
+import tensorflow as tf
+
+
+
+
+
+```
+
+
+
+
 # 2 TensorFlow 2.x
 
 
