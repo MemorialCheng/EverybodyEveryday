@@ -23,17 +23,21 @@ https://www.cnblogs.com/AlvinSui/p/8987707.html
 tf.float32  
 tf.int32  
 ...
-
+```py
+# 常量：
+tf.constant()
+# 变量：
+tf.Variable()
+```
 
 ```py
 
 # TensorFlow导包警告
+解决方法1；
+pip install numpy==1.16.0
+解决方法2：暴力法
 import os
 os.environ['TF_CPP_MIN_LOG_LEVEL'] = '2'
-import tensorflow as tf
-
-
-
 
 
 ```
