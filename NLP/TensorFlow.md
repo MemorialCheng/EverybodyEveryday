@@ -42,6 +42,17 @@ os.environ['TF_CPP_MIN_LOG_LEVEL'] = '2'
 
 ```
 
+```py
+    tf.InteractiveSession()  # 交互式环境下该函数可以自动将生成的会话注册为默认会话
+    sess = tf.Session()
+    with sess.as_default():
+        print(result.eval())
+    # 等价于下面一句：
+    sess = tf.InteractiveSession()
+    print(result.eval())
+    sess.close()
+```
+
 
 
 
