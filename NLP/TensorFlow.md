@@ -54,6 +54,9 @@ os.environ['TF_CPP_MIN_LOG_LEVEL'] = '2'
 ```
 
 
+# 常用函数
+## tf.clip_by_value(y, min, max)  
+限制y取值范围：y小于min时取min;大于max时取max;中间取y
 
 
 # 2 TensorFlow 2.x
