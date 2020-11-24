@@ -54,9 +54,22 @@ os.environ['TF_CPP_MIN_LOG_LEVEL'] = '2'
 ```
 
 
-## xxx常用函数
-### xxx.1 tf.clip_by_value(y, min, max)  
+## 1.xx 常用函数
+### 1.xx.1 tf.clip_by_value(y, min, max)  
 限制y取值范围：y小于min时取min;大于max时取max;中间取y
+
+### 1.xx.2 tf.where;tf.greater
+tf.where三个参数，第一个参数为True时选择第二个参数值，为False时选择第三个参数；  
+tf.greater()比较函数。
+
+```py
+import tensorflow as tf
+v1 = tf.constant([1,3,5])
+v2 = tf.constant([2,1,6])
+with tf.Session() as sess:
+    print(tf.greater(v1,v2).eval()) # [False  True False]
+    print(tf.where(tf.greater(v1,v2),v1,v2).eval()) # [2 3 6]
+```
 
 
 # 2 TensorFlow 2.x
