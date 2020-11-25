@@ -175,7 +175,14 @@ tf.reduce_max  :  计算tensor指定轴方向上的各个元素的最大值;
 tf.reduce_all :  计算tensor指定轴方向上的各个元素的逻辑和（and运算）;
 tf.reduce_any:  计算tensor指定轴方向上的各个元素的逻辑或（or运算）;
 ```
-
+### 1.xx.6 tf.contrib.layers.l2_regularizer(lambda)(w) 正则化
+```py
+import tensorflow as tf
+w = tf.constant([[1.0,2.0],[-3.0,4.0]])
+with tf.Session() as sess:
+    print(sess.run(tf.contrib.layers.l1_regularizer(.5)(w))) # 5.0
+    print(sess.run(tf.contrib.layers.l2_regularizer(.5)(w))) # 7.5
+```
 # 2 TensorFlow 2.x
 
 
