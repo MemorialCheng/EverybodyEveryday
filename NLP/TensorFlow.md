@@ -104,7 +104,7 @@ learning_rate = 0.001
 # 定义反向传播算法来优化神经网络参数
 train_step = tf.train.AdamOptimizer(lenarning_rate).minimize(cross_entropy)
 ```
-### 1.xx.3 tf.train.exponential_decay指数衰减
+### 1.xx.4 tf.train.exponential_decay指数衰减
 该函数可以先使用较大的学习率快速得到一个比较优的解，然后随着迭代的继续逐步减小学习率，使得模型在训练后期更加稳定。  
 实现了：
 ```py
@@ -157,6 +157,23 @@ with tf.Session() as sess:
         loss_val = sess.run(loss)
         print ("After %s steps: global_step is %f, w is %f, learning rate is %f, loss is %f" % (i, global_step_val, w_val, learning_rate_val, loss_val))
 
+```
+### 1.xx.5 tf.reduce_mean 
+参考：https://blog.csdn.net/dcrmg/article/details/79797826  
+tf.reduce_mean 函数用于计算张量tensor沿着指定的数轴（tensor的某一维度）上的的平均值，主要用作降维或者计算tensor（图像）的平均值。  
+```py
+reduce_mean(input_tensor,
+                axis=None,
+                keep_dims=False,
+                name=None,
+                reduction_indices=None)
+```
+类似函数还有:
+```py
+tf.reduce_sum ：计算tensor指定轴方向上的所有元素的累加和;
+tf.reduce_max  :  计算tensor指定轴方向上的各个元素的最大值;
+tf.reduce_all :  计算tensor指定轴方向上的各个元素的逻辑和（and运算）;
+tf.reduce_any:  计算tensor指定轴方向上的各个元素的逻辑或（or运算）;
 ```
 
 # 2 TensorFlow 2.x
