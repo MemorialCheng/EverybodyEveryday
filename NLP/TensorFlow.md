@@ -118,58 +118,6 @@ with tf.Session() as sess:
     print(sess.run(w1))
     print(sess.run(w2)) 
 ```
-
-## 1.xx 常用函数
-### 1.xx.1 tf.clip_by_value(y, min, max)  
-限制y取值范围：y小于min时取min;大于max时取max;中间取y
-
-### 1.xx.2 tf.where;tf.greater
-tf.where三个参数，第一个参数为True时选择第二个参数值，为False时选择第三个参数；  
-tf.greater()比较函数。
-
-```py
-import tensorflow as tf
-v1 = tf.constant([1,3,5])
-v2 = tf.constant([2,1,6])
-with tf.Session() as sess:
-    print(tf.greater(v1,v2).eval()) # [False  True False]
-    print(tf.where(tf.greater(v1,v2),v1,v2).eval()) # [2 3 6]
-```
-### 1.xx.3 tf.placeholder 占位符
-```py
-# 利用placeholder定义输入数据
-
-import tensorflow as tf
-# 声明变量：权重，并设定随机种子seed，以保证每次运行的结构一样
-w1 = tf.Variable(tf.random_normal((2,3),stddev=1,seed=1))
-w2 = tf.Variable(tf.random_normal((3,1),stddev=1,seed=1))
-
-# placeholder定义输入数据
-x = tf.placeholder(tf.float32, shape=(3, 2), name="input")
-
-# 定义模型计算
-a = tf.matmul(x, w1)
-y = tf.matmul(a, w2)
-
-with tf.Session() as sess:
-    # 初始化所有变量
-    sess.run(tf.global_variables_initializer())
-    
-    # 输出y
-    print(sess.run(y, feed_dict={x: [[0.7,0.9], [0.1, 0.4], [0.5, 0.8]]}))
-    
-# 使用sigmoid函数将y装换伟0~1之间的数值
-y = tf.sigmoid(y)
-# 定义损失函数 tf.clip_by_value(y, min, max) 限制y取值范围
-cross_entropy = -tf.reduce_mean(
-    y_ * tf.log(tf.clip_by_value(y, 1e-10, 1.0))
-    + (1-y)*tf.log(tf.clip_by_value(1-y, 1e-10, 1.0)))
-# 定义学习率
-learning_rate = 0.001
-# 定义反向传播算法来优化神经网络参数
-train_step = tf.train.AdamOptimizer(lenarning_rate).minimize(cross_entropy)
-```
-
 ## 1.3 神经网络全模型
 ```py
 import tensorflow as tf
@@ -273,6 +221,59 @@ def main(argv=None):
 if __name__=='__main__':
     main()
 ```
+
+## 1.xx 常用函数
+### 1.xx.1 tf.clip_by_value(y, min, max)  
+限制y取值范围：y小于min时取min;大于max时取max;中间取y
+
+### 1.xx.2 tf.where;tf.greater
+tf.where三个参数，第一个参数为True时选择第二个参数值，为False时选择第三个参数；  
+tf.greater()比较函数。
+
+```py
+import tensorflow as tf
+v1 = tf.constant([1,3,5])
+v2 = tf.constant([2,1,6])
+with tf.Session() as sess:
+    print(tf.greater(v1,v2).eval()) # [False  True False]
+    print(tf.where(tf.greater(v1,v2),v1,v2).eval()) # [2 3 6]
+```
+### 1.xx.3 tf.placeholder 占位符
+```py
+# 利用placeholder定义输入数据
+
+import tensorflow as tf
+# 声明变量：权重，并设定随机种子seed，以保证每次运行的结构一样
+w1 = tf.Variable(tf.random_normal((2,3),stddev=1,seed=1))
+w2 = tf.Variable(tf.random_normal((3,1),stddev=1,seed=1))
+
+# placeholder定义输入数据
+x = tf.placeholder(tf.float32, shape=(3, 2), name="input")
+
+# 定义模型计算
+a = tf.matmul(x, w1)
+y = tf.matmul(a, w2)
+
+with tf.Session() as sess:
+    # 初始化所有变量
+    sess.run(tf.global_variables_initializer())
+    
+    # 输出y
+    print(sess.run(y, feed_dict={x: [[0.7,0.9], [0.1, 0.4], [0.5, 0.8]]}))
+    
+# 使用sigmoid函数将y装换伟0~1之间的数值
+y = tf.sigmoid(y)
+# 定义损失函数 tf.clip_by_value(y, min, max) 限制y取值范围
+cross_entropy = -tf.reduce_mean(
+    y_ * tf.log(tf.clip_by_value(y, 1e-10, 1.0))
+    + (1-y)*tf.log(tf.clip_by_value(1-y, 1e-10, 1.0)))
+# 定义学习率
+learning_rate = 0.001
+# 定义反向传播算法来优化神经网络参数
+train_step = tf.train.AdamOptimizer(lenarning_rate).minimize(cross_entropy)
+```
+
+
 ### 1.xx.4 tf.train.exponential_decay指数衰减
 该函数可以先使用较大的学习率快速得到一个比较优的解，然后随着迭代的继续逐步减小学习率，使得模型在训练后期更加稳定。  
 实现了：
