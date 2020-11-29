@@ -221,6 +221,8 @@ def main(argv=None):
 if __name__=='__main__':
     main()
 ```
+# 1.4 MNIST最佳实战
+
 
 ## 1.xx 常用函数
 ### 1.xx.1 tf.clip_by_value(y, min, max)  
