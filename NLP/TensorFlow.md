@@ -355,6 +355,28 @@ with tf.Session() as sess:
     print(sess.run(tf.contrib.layers.l1_regularizer(.5)(w))) # 5.0
     print(sess.run(tf.contrib.layers.l2_regularizer(.5)(w))) # 7.5
 ```
+### 1.xx.7 tf.expand_dims()
+语法：
+```py
+tf.expand_dims(
+    input,
+    axis=None,
+    name=None,
+    dim=None)
+```
+功能：是给定一个input，在axis轴处给input增加一个为1的维度  
+举例：
+```py
+# 't2' is a tensor of shape [2, 3, 5]
+tf.shape(tf.expand_dims(t2, 0))  # [1, 2, 3, 5]
+```
+因为axis=0所以矩阵的维度变成1*2*3*5。  
+
+同理如果axis=2，矩阵就会变为2*3*1*5。  
+
+0其实代表的第一维度，那么1代表第二维度，2代表第三维度。以此类推  
+
+
 # 2 TensorFlow 2.x
 
 
