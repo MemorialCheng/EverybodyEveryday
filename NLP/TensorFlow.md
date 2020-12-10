@@ -420,6 +420,30 @@ tf.layers.conv1d()的filters过滤器的个数;kernel_size卷积核的大小，�
 
 ### 1.xxx.9 tf.nn，tf.layers， tf.contrib模块介绍
 https://blog.csdn.net/Yuancccc/article/details/89472133?utm_medium=distribute.pc_relevant.none-task-blog-BlogCommendFromBaidu-1.control&depth_1-utm_source=distribute.pc_relevant.none-task-blog-BlogCommendFromBaidu-1.control
+
+### 1.xxx.10 tf.summary.xxx函数
+- tf.summary.scalar(tags, values, collections=None, name=None)
+如：tf.summary.scalar('loss', loss);  
+一般在画loss,accuary时会用到这个函数.
+
+- tf.summary.histogram(tags, values, collections=None, name=None) 
+ 如：tf.summary.histogram('weights',W);  
+ 一般用来显示训练过程中变量的分布情况,用来显示直方图信息
+ 
+- Summary：所有需要在TensorBoard上展示的统计结果。
+
+- tf.name_scope()：为Graph中的Tensor添加层级，TensorBoard会按照代码指定的层级进行展示，初始状态下只绘制最高层级的效果，点击后可展开层级看到下一层的细节。
+
+- tf.summary.scalar()：添加标量统计结果。
+
+- tf.summary.histogram()：添加任意shape的Tensor，统计这个Tensor的取值分布。
+
+- tf.summary.merge_all()：添加一个操作，代表执行所有summary操作，这样可以避免人工执行每一个summary op。
+
+- tf.summary.FileWrite：用于将Summary写入磁盘，需要制定存储路径logdir，如果传递了Graph对象，则在Graph Visualization会显示Tensor Shape Information。执行summary op后，将返回结果传递给add_summary()方法即可。
+
+
+
 # 2 TensorFlow 2.x
 
 
