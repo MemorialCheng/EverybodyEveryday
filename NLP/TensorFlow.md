@@ -375,7 +375,48 @@ tf.shape(tf.expand_dims(t2, 0))  # [1, 2, 3, 5]
 同理如果axis=2，矩阵就会变为2*3*1*5。  
 
 0其实代表的第一维度，那么1代表第二维度，2代表第三维度。以此类推  
-
+### 1.xx.7 tf.layers.conv1d和tf.nn.conv1d区别
+参考博客：https://blog.csdn.net/u013323018/article/details/90444952  
+- tf.nn.conv1d()主要参数value,filters,stride,padding,name
+```py
+# tf.nn.conv1d
+def conv1d(
+    value=None,
+    filters=None,
+    stride=None,
+    padding=None,
+    use_cudnn_on_gpu=None,
+    data_format=None,
+    name=None,
+    input=None,  # pylint: disable=redefined-builtin
+    dilations=None):
+```
+- tf.layers.conv1d()主要参数inputs,filters,kernel_size,strides,padding,name
+```py
+# tf.layers.conv1d
+tf.layers.conv1d(
+inputs,
+filters,
+kernel_size,
+strides=1,
+padding='valid',
+data_format='channels_last',
+dilation_rate=1,
+activation=None,
+use_bias=True,
+kernel_initializer=None,
+bias_initializer=tf.zeros_initializer(),
+kernel_regularizer=None,
+bias_regularizer=None,
+activity_regularizer=None,
+kernel_constraint=None,
+bias_constraint=None,
+trainable=True,
+name=None,
+reuse=None
+```
+个人小结：tf.nn.conv1d()的filters格式[filter_width, in_channels, out_channels];  
+tf.layers.conv1d()的filters过滤器的个数;kernel_size卷积核的大小，卷积核其实应该是一个二维的，这里只需要指定一维，是因为卷积核的第二维与输入的词向量维度是一致的，因为对于句子而言，卷积的移动方向只能是沿着词的方向，即只能在列维度移动。
 
 # 2 TensorFlow 2.x
 
