@@ -81,3 +81,8 @@ https://blog.csdn.net/qq_33187136/article/details/105413899
 # dataframe
 行数:len(df), df.shape[0]
 列数:df.shape[1]
+
+## 添加一列/一行
+### 添加列
+- df["name"] = ["Tom", "Jerry"]
+
