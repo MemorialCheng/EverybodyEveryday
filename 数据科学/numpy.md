@@ -100,6 +100,9 @@ pad(array, pad_width, mode, **kwargs)
 ```py
 np.pad(arr3D, ((0, 0), (1, 1), (2, 2)), 'constant')
 ```
+## 1.16 np.random.permutation()
+https://blog.csdn.net/weixin_44188264/article/details/93752505
+
 
 
 
