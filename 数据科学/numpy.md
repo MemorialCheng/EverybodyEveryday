@@ -108,6 +108,13 @@ https://blog.csdn.net/weixin_44188264/article/details/93752505
 > 常用参数
  numpy.linspace(start, stop, num=50, dtype=None)
 
+## 1.18 np.sin(a)
+- a为ndarray对象
+np.sin(a) 对矩阵a中每个元素取正弦
+- a是单个数据值：
+np.sin(a) 对a元素取正弦
+
+
 
 参考博客 https://blog.csdn.net/zenghaitao0128/article/details/78713663?utm_medium=distribute.pc_relevant.none-task-blog-BlogCommendFromMachineLearnPai2-1.nonecase&depth_1-utm_source=distribute.pc_relevant.none-task-blog-BlogCommendFromMachineLearnPai2-1.nonecase
 
