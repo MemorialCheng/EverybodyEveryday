@@ -103,7 +103,10 @@ np.pad(arr3D, ((0, 0), (1, 1), (2, 2)), 'constant')
 ## 1.16 np.random.permutation()
 https://blog.csdn.net/weixin_44188264/article/details/93752505
 
-
+## 1.17 numpy.linspace(start, stop, num=50, endpoint=True, retstep=False, dtype=None)
+在指定的间隔内返回均匀间隔的数字。返回num个均匀分布的样本，在[start, stop]
+> 常用参数
+ numpy.linspace(start, stop, num=50, dtype=None)
 
 
 参考博客 https://blog.csdn.net/zenghaitao0128/article/details/78713663?utm_medium=distribute.pc_relevant.none-task-blog-BlogCommendFromMachineLearnPai2-1.nonecase&depth_1-utm_source=distribute.pc_relevant.none-task-blog-BlogCommendFromMachineLearnPai2-1.nonecase
