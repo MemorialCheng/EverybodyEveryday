@@ -1,0 +1,8 @@
+# 隐马尔可夫模型
+
+## 两个假设
+
+## 三个问题
+- Evaluation
+- Learning
+- Decoding
