@@ -5,6 +5,8 @@
 - 观测独立性假设，即假设任意时刻的观测只依赖于该时刻的马尔可夫链的状态，与其他观测及状态无关。
 
 ## 三个问题
-- Evaluation
-- Learning
-- Decoding
+- Evaluation(生成/概率计算)
+- Learning(学习/训练)
+- Decoding(解码/预测)
+
+参考：https://www.hankcs.com/ml/hidden-markov-model.html
