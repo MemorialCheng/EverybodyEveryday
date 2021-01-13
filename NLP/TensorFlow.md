@@ -442,6 +442,17 @@ https://blog.csdn.net/Yuancccc/article/details/89472133?utm_medium=distribute.pc
 
 - tf.summary.FileWrite：用于将Summary写入磁盘，需要制定存储路径logdir，如果传递了Graph对象，则在Graph Visualization会显示Tensor Shape Information。执行summary op后，将返回结果传递给add_summary()方法即可。
 
+### 1.xxx.11 tf.cast()数据类型转换
+
+```py
+cast(x, dtype, name=None)
+```
+- 第一个参数 x:   待转换的数据（张量）
+- 第二个参数 dtype： 目标数据类型
+- 第三个参数 name： 可选参数，定义操作的名称
+
+参考：https://blog.csdn.net/dcrmg/article/details/79747814
+
 
 
 # 2 TensorFlow 2.x
