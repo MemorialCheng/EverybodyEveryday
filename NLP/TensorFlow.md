@@ -453,7 +453,18 @@ cast(x, dtype, name=None)
 
 参考：https://blog.csdn.net/dcrmg/article/details/79747814
 
-
+### 1.xxx.12 tf.concat([a,b],1)数据类型转换
+tf.concat函数： 主要用于连接两个数组
+参数：
+- values：需要连接的数组
+- axis：从哪个维度来连接数组
+- 条件：axis=x,数组x以外的维度必须相同
+```py
+a.shape  (3, 2, 4)
+b.shape  (4, 2, 4)
+只能对0维度操作：tf.concat([a,b],0)  (7, 4, 2)
+其他维度报错
+```
 
 # 2 TensorFlow 2.x
 
