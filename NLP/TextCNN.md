@@ -13,3 +13,5 @@ https://asialee.blog.csdn.net/article/details/88813385?utm_medium=distribute.pc_
 
 
 CNN
+
+Text-CNN
