@@ -23,7 +23,8 @@ __信息增益__ 就是经验熵和经验条件熵之差。
 ### 1.1.2 信息增益比(information gain ratio)
 根据信息增益作为划分训练集的特征，存在偏向于选择取值较多的特征的问题。使用信息增益比可以校正该问题。
 定义：特征A对于数据集D的信息增益比为其信息增益g(D,A)与数据集D关于特征A的熵H(D)之比，
-gR(D,A)=g(D,A)HA(D)
+gR(D,A)=g(D,A)HA(D)  
+![img](https://github.com/MemorialCheng/EverybodyEveryday/blob/master/leetcode_offer/picture/entropy_ratio.jpg)  
 
 ## 1.2 决策树的生成
 决策树学习的经典算法：ID3,C4.5,CART
@@ -60,7 +61,7 @@ Gini(D) = 1 - 求和(Pi)^2
 CART在每一次迭代过程选择基尼指数最小的特征及其对应的切分点进行分类。  
 是一颗二叉树，每一步将数据按特征A的取值切分为两份，分别进入左右子树。
 Gini(D|A) = 求和Pi*Gini(Di)  
-
+![img](https://github.com/MemorialCheng/EverybodyEveryday/blob/master/leetcode_offer/picture/gini.jpg)  
 
 ## 1.3 决策树的剪枝(pruning)
 决策树面临一个严重问题是过拟合。  
