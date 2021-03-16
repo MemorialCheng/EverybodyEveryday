@@ -102,3 +102,9 @@ Gini(D|A) = 求和Pi*Gini(Di)
 基尼指数是信息熵中-logP在P=1处一阶泰勒展开后的结果！所以两者都可以用来度量数据集的纯度，用于描述决策树节点的纯度！  
 参考：https://blog.csdn.net/YE1215172385/article/details/79470926
 https://zhuanlan.zhihu.com/p/85731206
+
+# 2 LR逻辑回归
+
+![image](https://github.com/MemorialCheng/EverybodyEveryday/tree/master/leetcode_offer/picture/逻辑回归.png)
+
+![image](https://github.com/MemorialCheng/EverybodyEveryday/tree/master/leetcode_offer/picture/逻辑回归2.png)
