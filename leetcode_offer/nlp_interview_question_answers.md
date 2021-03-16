@@ -105,6 +105,6 @@ https://zhuanlan.zhihu.com/p/85731206
 
 # 2 LR逻辑回归
 
-![image](https://github.com/MemorialCheng/EverybodyEveryday/tree/master/leetcode_offer/picture/逻辑回归.png)
+![image](https://github.com/MemorialCheng/EverybodyEveryday/tree/master/leetcode_offer/picture/lr.png)
 
-![image](https://github.com/MemorialCheng/EverybodyEveryday/tree/master/leetcode_offer/picture/逻辑回归2.png)
+![image](https://github.com/MemorialCheng/EverybodyEveryday/tree/master/leetcode_offer/picture/lr1.png)
