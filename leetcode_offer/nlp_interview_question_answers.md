@@ -107,5 +107,6 @@ https://zhuanlan.zhihu.com/p/85731206
 
 ![image](https://github.com/MemorialCheng/EverybodyEveryday/blob/master/leetcode_offer/picture/lr.png)
 
+<img src="https://github.com/MemorialCheng/EverybodyEveryday/blob/master/leetcode_offer/picture/lr.png" width="500" />
 
 ![image](https://github.com/MemorialCheng/EverybodyEveryday/blob/master/leetcode_offer/picture/lr1.png)
