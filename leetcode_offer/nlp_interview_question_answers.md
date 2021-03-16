@@ -14,7 +14,7 @@ __条件熵__ H(Y|X)表示在已知随机变量X的条件下随机变量Y的不�
 H(Y|X) = 求和PiH(H|X=xi)  
 当熵和条件熵中的概率由数据估计（特别是极大似然估计）得到时，所对应的熵和条件熵分布称为经验熵和经验条件熵。  
 __信息增益__ 就是经验熵和经验条件熵之差。
-![img](https://github.com/MemorialCheng/EverybodyEveryday/blob/master/leetcode_offer/picture/entropy.jpg size=400)  
+![img](https://github.com/MemorialCheng/EverybodyEveryday/blob/master/leetcode_offer/picture/entropy.jpg)  
 决策树根据信息增益选择特征。给定训练数据集D和特征A,经验熵H(D)表示对数据集D进行分类的不确定性。经验条件熵H(D|A)表示在特征A给定的条件下对数据集D进行分类的不确定性。  
 两者之差，即信息增益g(D,A)就表示由于特征A而使得对数据集D的分类的不确定性减少的程度。 __信息增益大的特征具有更强的分类能力.__  
 
@@ -104,6 +104,7 @@ Gini(D|A) = 求和Pi*Gini(Di)
 https://zhuanlan.zhihu.com/p/85731206
 
 # 2 LR逻辑回归
+参考：https://www.bilibili.com/video/BV17s411j7s1/?spm_id_from=autoNext
 
 ![image](https://github.com/MemorialCheng/EverybodyEveryday/blob/master/leetcode_offer/picture/lr.png)
 
