@@ -107,6 +107,5 @@ https://zhuanlan.zhihu.com/p/85731206
 
 ![image](https://github.com/MemorialCheng/EverybodyEveryday/blob/master/leetcode_offer/picture/lr.png)
 
-![image](https://github.com/MemorialCheng/DailyStudyNotes/blob/master/images/sunflower.jpg)
 
 ![image](https://github.com/MemorialCheng/EverybodyEveryday/blob/master/leetcode_offer/picture/lr1.png)
