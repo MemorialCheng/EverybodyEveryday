@@ -101,8 +101,8 @@ Gini(D|A) = 求和Pi*Gini(Di)
 
 ## 1.5 信息熵和基尼指数区别与联系
 基尼指数是信息熵中-logP在P=1处一阶泰勒展开后的结果！所以两者都可以用来度量数据集的纯度，用于描述决策树节点的纯度！  
-参考：https://blog.csdn.net/YE1215172385/article/details/79470926
-https://zhuanlan.zhihu.com/p/85731206
+[参考1](https://blog.csdn.net/YE1215172385/article/details/79470926)  
+[参考2](https://zhuanlan.zhihu.com/p/85731206)
 
 # 2 LR逻辑回归
 [参考链接](https://www.bilibili.com/video/BV17s411j7s1/?spm_id_from=autoNext)
