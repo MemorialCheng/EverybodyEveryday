@@ -124,4 +124,7 @@ Gini(D|A) = 求和Pi*Gini(Di)
 [xgboost常见面试题](https://blog.csdn.net/weixin_38753230/article/details/100571499?utm_medium=distribute.pc_relevant.none-task-blog-BlogCommendFromMachineLearnPai2-1.control&dist_request_id=&depth_1-utm_source=distribute.pc_relevant.none-task-blog-BlogCommendFromMachineLearnPai2-1.control)
 
 # CRF
+
+[最通俗易懂的BiLSTM-CRF模型中的CRF层介绍](https://zhuanlan.zhihu.com/p/44042528)  
+
 Tensorflow1.x实现BiLstm+CRF:[讲解](https://blog.csdn.net/u013963380/article/details/109270714)|[代码](https://github.com/xudongMk/AwesomeNLPBaseline/tree/main/named_entity_recognition )
