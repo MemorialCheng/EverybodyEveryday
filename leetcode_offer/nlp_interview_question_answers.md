@@ -105,9 +105,22 @@ Gini(D|A) = 求和Pi*Gini(Di)
 https://zhuanlan.zhihu.com/p/85731206
 
 # 2 LR逻辑回归
-参考：https://www.bilibili.com/video/BV17s411j7s1/?spm_id_from=autoNext
+[参考链接](https://www.bilibili.com/video/BV17s411j7s1/?spm_id_from=autoNext)
 
 ![image](https://github.com/MemorialCheng/EverybodyEveryday/blob/master/leetcode_offer/picture/lr.png)
 
-
 ![image](https://github.com/MemorialCheng/EverybodyEveryday/blob/master/leetcode_offer/picture/lr1.png)
+
+# 3 集成学习-AdaBoost、GBDT、XGBoost、Lightgbm、随机森林
+## Bagging
+- 常见的有随机森林，基分类器是决策树。  
+- 主要是通过减小方差来提升弱分类器性能。  
+- 各弱分类器之间不存在强依赖关系，相反bagging就是追求模型之间独立性。比如随机森林，每次选取节点分裂最优属性，就是为了避免弱分类之间过强的相关性；通过训练集的重采样也能带来弱分类器之间的一定独立性，从而降低Bagging后模型的方差。
+
+## Boosting
+- 常见的有AdaBoost、GBDT、XGBoost、Lightgbm，目前最火的xgboost。
+- 主要通过减小偏差来提升弱分类器性能。  
+
+[xgboost常见面试题](https://blog.csdn.net/weixin_38753230/article/details/100571499?utm_medium=distribute.pc_relevant.none-task-blog-BlogCommendFromMachineLearnPai2-1.control&dist_request_id=&depth_1-utm_source=distribute.pc_relevant.none-task-blog-BlogCommendFromMachineLearnPai2-1.control)
+
+
