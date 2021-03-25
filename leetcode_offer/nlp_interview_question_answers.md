@@ -123,7 +123,16 @@ Gini(D|A) = 求和Pi*Gini(Di)
 
 [xgboost常见面试题](https://blog.csdn.net/weixin_38753230/article/details/100571499?utm_medium=distribute.pc_relevant.none-task-blog-BlogCommendFromMachineLearnPai2-1.control&dist_request_id=&depth_1-utm_source=distribute.pc_relevant.none-task-blog-BlogCommendFromMachineLearnPai2-1.control)
 
-# CRF
+# 4 参数计算
+## 4.1 LSTM参数计算  
+[参考链接](https://www.zhihu.com/question/268956632/answer/523742738)
+
+## 4.2 Bert_Base参数计算  
+[参考链接](https://blog.csdn.net/weixin_43922901/article/details/102602557)
+
+
+
+# 5 CRF
 
 [最通俗易懂的BiLSTM-CRF模型中的CRF层介绍](https://zhuanlan.zhihu.com/p/44042528)  
 
