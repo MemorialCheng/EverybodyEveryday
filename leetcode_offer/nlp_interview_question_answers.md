@@ -121,6 +121,16 @@ Gini(D|A) = 求和Pi*Gini(Di)
 - 常见的有AdaBoost、GBDT、XGBoost、Lightgbm，目前最火的xgboost。
 - 主要通过减小偏差来提升弱分类器性能。  
 
+### 3.2.1 gbdt的残差为什么用负梯度代替？
+(1) 负梯度永远是函数下降最快的方向，自然也是gbdt目标函数下降最快的方向，所以用梯度去拟合首先是没什么问题的
+		（并不是拟合梯度，只是用梯度去拟合，发现好多人搞错）；gbdt本来中的g代表gradient，本来就是用梯度拟合；
+
+(2) 用残差去拟合，只是目标函数是均方误差的一种特殊情况，这个特殊情况跟CART拟合残差一模一样，使得看起来就拟合残差合情合理。
+
+(3) 为啥要去用梯度拟合不用残差？代价函数除了loss还有正则项，正则中有参数和变量，很多情况下只拟合残差loss变小但是正则变大，代价函数不一定就小，
+		这时候就要用梯度啦，梯度的本质也是一种方向导数，综合了各个方向（参数）的变化，选择了一个总是最优（下降最快）的方向。
+    
+
 [xgboost常见面试题](https://blog.csdn.net/weixin_38753230/article/details/100571499?utm_medium=distribute.pc_relevant.none-task-blog-BlogCommendFromMachineLearnPai2-1.control&dist_request_id=&depth_1-utm_source=distribute.pc_relevant.none-task-blog-BlogCommendFromMachineLearnPai2-1.control)
 
 # 4 参数计算
