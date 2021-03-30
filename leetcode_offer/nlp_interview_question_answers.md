@@ -147,3 +147,8 @@ Gini(D|A) = 求和Pi*Gini(Di)
 [最通俗易懂的BiLSTM-CRF模型中的CRF层介绍](https://zhuanlan.zhihu.com/p/44042528)  
 
 Tensorflow1.x实现BiLstm+CRF:[讲解](https://blog.csdn.net/u013963380/article/details/109270714)|[代码](https://github.com/xudongMk/AwesomeNLPBaseline/tree/main/named_entity_recognition )
+
+
+[如何解决样本不均衡](https://www.jianshu.com/p/76dce1fca85b)
+
+
